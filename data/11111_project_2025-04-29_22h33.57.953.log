@@ -1,0 +1,510 @@
+8.4634 	DEBUG 	Fullscreen settings ignored as running in pilot mode.
+8.4643 	INFO 	Loaded monitor calibration from ['2025_03_07 15:28']
+8.6863 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000025CA0AD4400>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000025CA0AD4460>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=False, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x0000025CA0B861D0>, multiSample=False, name='window1', numSamples=2, pos=[560.0, 240.0], screen=0, size=array([800, 600]), stencilBits=0, stereo=False, title='PsychoPy', units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+8.6864 	EXP 	window1: backgroundImage = ''
+8.6864 	EXP 	window1: backgroundFit = 'none'
+8.6931 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.6937 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.6943 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.6950 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.6957 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.6960 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.6966 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.6973 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.6976 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.6978 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.6984 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.6989 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.6994 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.7000 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.7004 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.7010 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.7015 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.7018 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.7022 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.7029 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.7032 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.7035 	DEBUG 	Uploading Texture Font fontname to graphics card
+8.7117 	DEBUG 	Upload of Texture Font fontname complete
+8.7165 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.7173 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.7180 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.7182 	DEBUG 	Uploading Texture Font fontname to graphics card
+8.7245 	DEBUG 	Upload of Texture Font fontname complete
+8.7268 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+8.7269 	EXP 	window1: recordFrameIntervals = False
+8.8038 	EXP 	window1: recordFrameIntervals = True
+8.8692 	EXP 	Screen (0) actual frame rate measured at 167.90Hz
+8.8692 	EXP 	window1: recordFrameIntervals = False
+8.8735 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.8741 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.8750 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.8759 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.8767 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.8774 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.8778 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.8784 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.8791 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.8799 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.8802 	DEBUG 	Uploading Texture Font fontname to graphics card
+8.8808 	DEBUG 	Upload of Texture Font fontname complete
+8.8901 	WARNING 	launchHubServer: If using the iohub mouse or eyetracker devices, fullScr should be True.
+10.8585 	INFO 	keyboard.Keyboard is using iohub backend.
+10.8585 	INFO 	keyboard.Keyboard is using iohub backend.
+10.8585 	INFO 	keyboard.Keyboard is using iohub backend.
+10.8585 	EXP 	project: status = STARTED
+10.9283 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text', opacity=1, ori=0.0, pos=array([0. , 0.1]), rgb=UNKNOWN, text="Please don't move or blink", units='height', win=Window(...), wrapWidth=1)
+10.9338 	EXP 	Created text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_2', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='If you ready, press [space bar]\n', units='height', win=Window(...), wrapWidth=1)
+10.9360 	EXP 	Created cross = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='cross', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.1, 0.1]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+10.9396 	EXP 	Created faces = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, image='default.png', interpolate=True, mask=None, maskParams=None, name='faces', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128.0, units='height', win=Window(...))
+10.9425 	EXP 	Created text_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_3', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Endding block', units='height', win=Window(...), wrapWidth=1)
+0.0118 	INFO 	Keyboard events cleared
+0.0116 	EXP 	text: autoDraw = True
+0.0116 	EXP 	text_2: autoDraw = True
+0.7312 	DEBUG 	Read csv file with pandas: blocks/block1.csv
+0.7319 	DEBUG 	Clearing unnamed columns from blocks/block1.csv
+0.7326 	EXP 	Imported blocks/block1.csv as conditions, 48 conditions, 4 params
+0.7329 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'block': 1, 'trial': 1, 'image': 'faces/unknown/unknown_48.jpg', 'type': 'unknown', 'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+0.7654 	DATA 	Keypress: space
+0.7690 	EXP 	text: autoDraw = False
+0.7690 	EXP 	text_2: autoDraw = False
+0.7690 	EXP 	faces: image = 'faces/unknown/unknown_48.jpg'
+1.7208 	EXP 	cross: autoDraw = True
+2.2117 	EXP 	cross: autoDraw = False
+2.7339 	INFO 	Keyboard events cleared
+2.7334 	EXP 	faces: autoDraw = True
+3.0441 	EXP 	New trial (rep=0, index=1): <Trial 1 (1 in rep 0) data={'block': 1, 'trial': 2, 'image': 'faces/unknown/unknown_174.jpg', 'type': 'unknown', 'thisN': 1, 'thisTrialN': 1, 'thisRepN': 0}>
+3.0757 	DATA 	Keypress: space
+3.0785 	EXP 	cross: autoDraw = False
+3.0785 	EXP 	faces: autoDraw = False
+3.0785 	EXP 	faces: image = 'faces/unknown/unknown_174.jpg'
+4.0359 	EXP 	cross: autoDraw = True
+4.5271 	EXP 	cross: autoDraw = False
+5.0360 	INFO 	Keyboard events cleared
+5.0358 	EXP 	faces: autoDraw = True
+5.2984 	EXP 	New trial (rep=0, index=2): <Trial 2 (2 in rep 0) data={'block': 1, 'trial': 3, 'image': 'faces/unknown/unknown_66.jpg', 'type': 'unknown', 'thisN': 2, 'thisTrialN': 2, 'thisRepN': 0}>
+5.3306 	DATA 	Keypress: space
+5.3330 	EXP 	cross: autoDraw = False
+5.3330 	EXP 	faces: autoDraw = False
+5.3330 	EXP 	faces: image = 'faces/unknown/unknown_66.jpg'
+6.2908 	EXP 	cross: autoDraw = True
+6.7826 	EXP 	cross: autoDraw = False
+7.2914 	INFO 	Keyboard events cleared
+7.2911 	EXP 	faces: autoDraw = True
+7.5236 	EXP 	New trial (rep=0, index=3): <Trial 3 (3 in rep 0) data={'block': 1, 'trial': 4, 'image': 'faces/unknown/unknown_267.jpg', 'type': 'unknown', 'thisN': 3, 'thisTrialN': 3, 'thisRepN': 0}>
+7.5532 	DATA 	Keypress: space
+7.5568 	EXP 	cross: autoDraw = False
+7.5568 	EXP 	faces: autoDraw = False
+7.5568 	EXP 	faces: image = 'faces/unknown/unknown_267.jpg'
+8.5142 	EXP 	cross: autoDraw = True
+9.0053 	EXP 	cross: autoDraw = False
+9.5159 	INFO 	Keyboard events cleared
+9.5154 	EXP 	faces: autoDraw = True
+9.7467 	EXP 	New trial (rep=0, index=4): <Trial 4 (4 in rep 0) data={'block': 1, 'trial': 5, 'image': 'faces/unknown/unknown_210.jpg', 'type': 'unknown', 'thisN': 4, 'thisTrialN': 4, 'thisRepN': 0}>
+9.7738 	DATA 	Keypress: space
+9.7821 	EXP 	cross: autoDraw = False
+9.7821 	EXP 	faces: autoDraw = False
+9.7821 	EXP 	faces: image = 'faces/unknown/unknown_210.jpg'
+10.7392 	EXP 	cross: autoDraw = True
+11.2298 	EXP 	cross: autoDraw = False
+11.7389 	INFO 	Keyboard events cleared
+11.7387 	EXP 	faces: autoDraw = True
+11.9967 	DATA 	Keypress: space
+12.0024 	EXP 	New trial (rep=0, index=5): <Trial 5 (5 in rep 0) data={'block': 1, 'trial': 6, 'image': 'faces/unknown/unknown_132.jpg', 'type': 'unknown', 'thisN': 5, 'thisTrialN': 5, 'thisRepN': 0}>
+12.0484 	EXP 	cross: autoDraw = False
+12.0484 	EXP 	faces: autoDraw = False
+12.0484 	EXP 	faces: image = 'faces/unknown/unknown_132.jpg'
+12.9934 	EXP 	cross: autoDraw = True
+13.4844 	EXP 	cross: autoDraw = False
+13.9940 	INFO 	Keyboard events cleared
+13.9936 	EXP 	faces: autoDraw = True
+15.9827 	EXP 	New trial (rep=0, index=6): <Trial 6 (6 in rep 0) data={'block': 1, 'trial': 7, 'image': 'faces/unknown/unknown_26.jpg', 'type': 'unknown', 'thisN': 6, 'thisTrialN': 6, 'thisRepN': 0}>
+16.0175 	EXP 	faces: autoDraw = False
+16.0175 	EXP 	cross: autoDraw = False
+16.0175 	EXP 	faces: autoDraw = False
+16.0175 	EXP 	faces: image = 'faces/unknown/unknown_26.jpg'
+16.9932 	EXP 	cross: autoDraw = True
+17.4842 	EXP 	cross: autoDraw = False
+17.9938 	INFO 	Keyboard events cleared
+17.9935 	EXP 	faces: autoDraw = True
+19.9824 	EXP 	New trial (rep=0, index=7): <Trial 7 (7 in rep 0) data={'block': 1, 'trial': 8, 'image': 'faces/unknown/unknown_8.jpg', 'type': 'unknown', 'thisN': 7, 'thisTrialN': 7, 'thisRepN': 0}>
+20.0172 	EXP 	faces: autoDraw = False
+20.0172 	EXP 	cross: autoDraw = False
+20.0172 	EXP 	faces: autoDraw = False
+20.0172 	EXP 	faces: image = 'faces/unknown/unknown_8.jpg'
+20.9991 	EXP 	cross: autoDraw = True
+21.4898 	EXP 	cross: autoDraw = False
+21.9933 	INFO 	Keyboard events cleared
+21.9931 	EXP 	faces: autoDraw = True
+22.3178 	DATA 	Keypress: space
+22.3225 	EXP 	New trial (rep=0, index=8): <Trial 8 (8 in rep 0) data={'block': 1, 'trial': 9, 'image': 'faces/unknown/unknown_68.jpg', 'type': 'unknown', 'thisN': 8, 'thisTrialN': 8, 'thisRepN': 0}>
+22.3630 	EXP 	cross: autoDraw = False
+22.3630 	EXP 	faces: autoDraw = False
+22.3630 	EXP 	faces: image = 'faces/unknown/unknown_68.jpg'
+23.3141 	EXP 	cross: autoDraw = True
+23.8050 	EXP 	cross: autoDraw = False
+24.3151 	INFO 	Keyboard events cleared
+24.3149 	EXP 	faces: autoDraw = True
+24.7405 	EXP 	New trial (rep=0, index=9): <Trial 9 (9 in rep 0) data={'block': 1, 'trial': 10, 'image': 'faces/unknown/unknown_44.jpg', 'type': 'unknown', 'thisN': 9, 'thisTrialN': 9, 'thisRepN': 0}>
+24.7776 	DATA 	Keypress: space
+24.7814 	EXP 	cross: autoDraw = False
+24.7814 	EXP 	faces: autoDraw = False
+24.7814 	EXP 	faces: image = 'faces/unknown/unknown_44.jpg'
+25.7319 	EXP 	cross: autoDraw = True
+26.2234 	EXP 	cross: autoDraw = False
+26.7325 	INFO 	Keyboard events cleared
+26.7322 	EXP 	faces: autoDraw = True
+28.7217 	EXP 	New trial (rep=0, index=10): <Trial 10 (10 in rep 0) data={'block': 1, 'trial': 11, 'image': 'faces/unknown/unknown_128.jpg', 'type': 'unknown', 'thisN': 10, 'thisTrialN': 10, 'thisRepN': 0}>
+28.7632 	EXP 	faces: autoDraw = False
+28.7632 	EXP 	cross: autoDraw = False
+28.7632 	EXP 	faces: autoDraw = False
+28.7632 	EXP 	faces: image = 'faces/unknown/unknown_128.jpg'
+29.7322 	EXP 	cross: autoDraw = True
+30.2231 	EXP 	cross: autoDraw = False
+30.7326 	INFO 	Keyboard events cleared
+30.7324 	EXP 	faces: autoDraw = True
+31.1460 	EXP 	New trial (rep=0, index=11): <Trial 11 (11 in rep 0) data={'block': 1, 'trial': 12, 'image': 'faces/unknown/unknown_156.jpg', 'type': 'unknown', 'thisN': 11, 'thisTrialN': 11, 'thisRepN': 0}>
+31.1838 	DATA 	Keypress: space
+31.1866 	EXP 	cross: autoDraw = False
+31.1866 	EXP 	faces: autoDraw = False
+31.1866 	EXP 	faces: image = 'faces/unknown/unknown_156.jpg'
+32.1381 	EXP 	cross: autoDraw = True
+32.6287 	EXP 	cross: autoDraw = False
+33.1386 	INFO 	Keyboard events cleared
+33.1384 	EXP 	faces: autoDraw = True
+33.4069 	EXP 	New trial (rep=0, index=12): <Trial 12 (12 in rep 0) data={'block': 1, 'trial': 13, 'image': 'faces/unknown/unknown_203.jpg', 'type': 'unknown', 'thisN': 12, 'thisTrialN': 12, 'thisRepN': 0}>
+33.4453 	DATA 	Keypress: space
+33.4474 	EXP 	cross: autoDraw = False
+33.4474 	EXP 	faces: autoDraw = False
+33.4474 	EXP 	faces: image = 'faces/unknown/unknown_203.jpg'
+34.3987 	EXP 	cross: autoDraw = True
+34.8894 	EXP 	cross: autoDraw = False
+35.3995 	INFO 	Keyboard events cleared
+35.3991 	EXP 	faces: autoDraw = True
+36.4795 	EXP 	New trial (rep=0, index=13): <Trial 13 (13 in rep 0) data={'block': 1, 'trial': 14, 'image': 'faces/unknown/unknown_28.jpg', 'type': 'unknown', 'thisN': 13, 'thisTrialN': 13, 'thisRepN': 0}>
+36.5080 	DATA 	Keypress: space
+36.5138 	EXP 	cross: autoDraw = False
+36.5138 	EXP 	faces: autoDraw = False
+36.5138 	EXP 	faces: image = 'faces/unknown/unknown_28.jpg'
+37.4720 	EXP 	cross: autoDraw = True
+37.9630 	EXP 	cross: autoDraw = False
+38.4721 	INFO 	Keyboard events cleared
+38.4718 	EXP 	faces: autoDraw = True
+39.0139 	EXP 	New trial (rep=0, index=14): <Trial 14 (14 in rep 0) data={'block': 1, 'trial': 15, 'image': 'faces/unknown/unknown_285.jpg', 'type': 'unknown', 'thisN': 14, 'thisTrialN': 14, 'thisRepN': 0}>
+39.0527 	DATA 	Keypress: space
+39.0593 	EXP 	cross: autoDraw = False
+39.0593 	EXP 	faces: autoDraw = False
+39.0593 	EXP 	faces: image = 'faces/unknown/unknown_285.jpg'
+40.0048 	EXP 	cross: autoDraw = True
+40.4955 	EXP 	cross: autoDraw = False
+41.0052 	INFO 	Keyboard events cleared
+41.0050 	EXP 	faces: autoDraw = True
+41.3158 	EXP 	New trial (rep=0, index=15): <Trial 15 (15 in rep 0) data={'block': 1, 'trial': 16, 'image': 'faces/unknown/unknown_241.jpg', 'type': 'unknown', 'thisN': 15, 'thisTrialN': 15, 'thisRepN': 0}>
+41.3520 	DATA 	Keypress: space
+41.3563 	EXP 	cross: autoDraw = False
+41.3563 	EXP 	faces: autoDraw = False
+41.3563 	EXP 	faces: image = 'faces/unknown/unknown_241.jpg'
+42.3077 	EXP 	cross: autoDraw = True
+42.8005 	EXP 	cross: autoDraw = False
+43.3082 	INFO 	Keyboard events cleared
+43.3079 	EXP 	faces: autoDraw = True
+45.2971 	EXP 	New trial (rep=0, index=16): <Trial 16 (16 in rep 0) data={'block': 1, 'trial': 17, 'image': 'faces/unknown/unknown_204.jpg', 'type': 'unknown', 'thisN': 16, 'thisTrialN': 16, 'thisRepN': 0}>
+45.3385 	EXP 	faces: autoDraw = False
+45.3385 	EXP 	cross: autoDraw = False
+45.3385 	EXP 	faces: autoDraw = False
+45.3385 	EXP 	faces: image = 'faces/unknown/unknown_204.jpg'
+46.3079 	EXP 	cross: autoDraw = True
+46.6126 	DATA 	Keypress: space
+46.7986 	EXP 	cross: autoDraw = False
+47.3081 	INFO 	Keyboard events cleared
+47.3078 	EXP 	faces: autoDraw = True
+47.5707 	EXP 	New trial (rep=0, index=17): <Trial 17 (17 in rep 0) data={'block': 1, 'trial': 18, 'image': 'faces/unknown/unknown_227.jpg', 'type': 'unknown', 'thisN': 17, 'thisTrialN': 17, 'thisRepN': 0}>
+47.6074 	DATA 	Keypress: space
+47.6111 	EXP 	cross: autoDraw = False
+47.6111 	EXP 	faces: autoDraw = False
+47.6111 	EXP 	faces: image = 'faces/unknown/unknown_227.jpg'
+48.5622 	EXP 	cross: autoDraw = True
+49.0531 	EXP 	cross: autoDraw = False
+49.5625 	INFO 	Keyboard events cleared
+49.5622 	EXP 	faces: autoDraw = True
+51.5515 	EXP 	New trial (rep=0, index=18): <Trial 18 (18 in rep 0) data={'block': 1, 'trial': 19, 'image': 'faces/unknown/unknown_168.jpg', 'type': 'unknown', 'thisN': 18, 'thisTrialN': 18, 'thisRepN': 0}>
+51.5928 	EXP 	faces: autoDraw = False
+51.5928 	EXP 	cross: autoDraw = False
+51.5928 	EXP 	faces: autoDraw = False
+51.5928 	EXP 	faces: image = 'faces/unknown/unknown_168.jpg'
+52.5622 	EXP 	cross: autoDraw = True
+53.0535 	EXP 	cross: autoDraw = False
+53.5631 	INFO 	Keyboard events cleared
+53.5628 	EXP 	faces: autoDraw = True
+53.8371 	EXP 	New trial (rep=0, index=19): <Trial 19 (19 in rep 0) data={'block': 1, 'trial': 20, 'image': 'faces/unknown/unknown_281.jpg', 'type': 'unknown', 'thisN': 19, 'thisTrialN': 19, 'thisRepN': 0}>
+53.8777 	DATA 	Keypress: space
+53.8842 	EXP 	cross: autoDraw = False
+53.8842 	EXP 	faces: autoDraw = False
+53.8842 	EXP 	faces: image = 'faces/unknown/unknown_281.jpg'
+54.8293 	EXP 	cross: autoDraw = True
+55.3194 	EXP 	cross: autoDraw = False
+55.8295 	INFO 	Keyboard events cleared
+55.8290 	EXP 	faces: autoDraw = True
+56.1395 	EXP 	New trial (rep=0, index=20): <Trial 20 (20 in rep 0) data={'block': 1, 'trial': 21, 'image': 'faces/unknown/unknown_101.jpg', 'type': 'unknown', 'thisN': 20, 'thisTrialN': 20, 'thisRepN': 0}>
+56.1777 	DATA 	Keypress: space
+56.1801 	EXP 	cross: autoDraw = False
+56.1801 	EXP 	faces: autoDraw = False
+56.1801 	EXP 	faces: image = 'faces/unknown/unknown_101.jpg'
+57.1317 	EXP 	cross: autoDraw = True
+57.6225 	EXP 	cross: autoDraw = False
+58.1320 	INFO 	Keyboard events cleared
+58.1317 	EXP 	faces: autoDraw = True
+58.4073 	EXP 	New trial (rep=0, index=21): <Trial 21 (21 in rep 0) data={'block': 1, 'trial': 22, 'image': 'faces/unknown/unknown_245.jpg', 'type': 'unknown', 'thisN': 21, 'thisTrialN': 21, 'thisRepN': 0}>
+58.4475 	DATA 	Keypress: space
+58.4531 	EXP 	cross: autoDraw = False
+58.4531 	EXP 	faces: autoDraw = False
+58.4531 	EXP 	faces: image = 'faces/unknown/unknown_245.jpg'
+59.3981 	EXP 	cross: autoDraw = True
+59.8892 	EXP 	cross: autoDraw = False
+60.3989 	INFO 	Keyboard events cleared
+60.3985 	EXP 	faces: autoDraw = True
+60.7707 	DATA 	Keypress: space
+60.7759 	EXP 	New trial (rep=0, index=22): <Trial 22 (22 in rep 0) data={'block': 1, 'trial': 23, 'image': 'faces/unknown/unknown_151.jpg', 'type': 'unknown', 'thisN': 22, 'thisTrialN': 22, 'thisRepN': 0}>
+60.8165 	EXP 	cross: autoDraw = False
+60.8165 	EXP 	faces: autoDraw = False
+60.8165 	EXP 	faces: image = 'faces/unknown/unknown_151.jpg'
+61.7680 	EXP 	cross: autoDraw = True
+62.2589 	EXP 	cross: autoDraw = False
+62.7682 	INFO 	Keyboard events cleared
+62.7679 	EXP 	faces: autoDraw = True
+63.0313 	EXP 	New trial (rep=0, index=23): <Trial 23 (23 in rep 0) data={'block': 1, 'trial': 24, 'image': 'faces/unknown/unknown_189.jpg', 'type': 'unknown', 'thisN': 23, 'thisTrialN': 23, 'thisRepN': 0}>
+63.0736 	DATA 	Keypress: space
+63.0773 	EXP 	cross: autoDraw = False
+63.0773 	EXP 	faces: autoDraw = False
+63.0773 	EXP 	faces: image = 'faces/unknown/unknown_189.jpg'
+64.0224 	EXP 	cross: autoDraw = True
+64.5135 	EXP 	cross: autoDraw = False
+65.0229 	INFO 	Keyboard events cleared
+65.0227 	EXP 	faces: autoDraw = True
+65.4732 	EXP 	New trial (rep=0, index=24): <Trial 24 (24 in rep 0) data={'block': 1, 'trial': 25, 'image': 'faces/unknown/unknown_148.jpg', 'type': 'unknown', 'thisN': 24, 'thisTrialN': 24, 'thisRepN': 0}>
+65.5065 	DATA 	Keypress: space
+65.5134 	EXP 	cross: autoDraw = False
+65.5134 	EXP 	faces: autoDraw = False
+65.5134 	EXP 	faces: image = 'faces/unknown/unknown_148.jpg'
+66.4645 	EXP 	cross: autoDraw = True
+66.9556 	EXP 	cross: autoDraw = False
+67.4647 	INFO 	Keyboard events cleared
+67.4645 	EXP 	faces: autoDraw = True
+67.8011 	EXP 	New trial (rep=0, index=25): <Trial 25 (25 in rep 0) data={'block': 1, 'trial': 26, 'image': 'faces/unknown/unknown_123.jpg', 'type': 'unknown', 'thisN': 25, 'thisTrialN': 25, 'thisRepN': 0}>
+67.8354 	DATA 	Keypress: space
+67.8406 	EXP 	cross: autoDraw = False
+67.8406 	EXP 	faces: autoDraw = False
+67.8406 	EXP 	faces: image = 'faces/unknown/unknown_123.jpg'
+68.7922 	EXP 	cross: autoDraw = True
+69.2830 	EXP 	cross: autoDraw = False
+69.7920 	INFO 	Keyboard events cleared
+69.7918 	EXP 	faces: autoDraw = True
+70.1996 	EXP 	New trial (rep=0, index=26): <Trial 26 (26 in rep 0) data={'block': 1, 'trial': 27, 'image': 'faces/unknown/unknown_127.jpg', 'type': 'unknown', 'thisN': 26, 'thisTrialN': 26, 'thisRepN': 0}>
+70.2384 	DATA 	Keypress: space
+70.2406 	EXP 	cross: autoDraw = False
+70.2406 	EXP 	faces: autoDraw = False
+70.2406 	EXP 	faces: image = 'faces/unknown/unknown_127.jpg'
+71.1920 	EXP 	cross: autoDraw = True
+71.6827 	EXP 	cross: autoDraw = False
+72.1922 	INFO 	Keyboard events cleared
+72.1919 	EXP 	faces: autoDraw = True
+74.1763 	EXP 	New trial (rep=0, index=27): <Trial 27 (27 in rep 0) data={'block': 1, 'trial': 28, 'image': 'faces/unknown/unknown_292.jpg', 'type': 'unknown', 'thisN': 27, 'thisTrialN': 27, 'thisRepN': 0}>
+74.2169 	EXP 	faces: autoDraw = False
+74.2169 	EXP 	cross: autoDraw = False
+74.2169 	EXP 	faces: autoDraw = False
+74.2169 	EXP 	faces: image = 'faces/unknown/unknown_292.jpg'
+75.1919 	EXP 	cross: autoDraw = True
+75.6826 	EXP 	cross: autoDraw = False
+76.1919 	INFO 	Keyboard events cleared
+76.1917 	EXP 	faces: autoDraw = True
+76.5085 	EXP 	New trial (rep=0, index=28): <Trial 28 (28 in rep 0) data={'block': 1, 'trial': 29, 'image': 'faces/unknown/unknown_282.jpg', 'type': 'unknown', 'thisN': 28, 'thisTrialN': 28, 'thisRepN': 0}>
+76.5481 	DATA 	Keypress: space
+76.5555 	EXP 	cross: autoDraw = False
+76.5555 	EXP 	faces: autoDraw = False
+76.5555 	EXP 	faces: image = 'faces/unknown/unknown_282.jpg'
+77.5005 	EXP 	cross: autoDraw = True
+77.9915 	EXP 	cross: autoDraw = False
+78.5009 	INFO 	Keyboard events cleared
+78.5007 	EXP 	faces: autoDraw = True
+78.9145 	EXP 	New trial (rep=0, index=29): <Trial 29 (29 in rep 0) data={'block': 1, 'trial': 30, 'image': 'faces/unknown/unknown_41.jpg', 'type': 'unknown', 'thisN': 29, 'thisTrialN': 29, 'thisRepN': 0}>
+78.9534 	DATA 	Keypress: space
+78.9617 	EXP 	cross: autoDraw = False
+78.9617 	EXP 	faces: autoDraw = False
+78.9617 	EXP 	faces: image = 'faces/unknown/unknown_41.jpg'
+79.9067 	EXP 	cross: autoDraw = True
+80.3974 	EXP 	cross: autoDraw = False
+80.9072 	INFO 	Keyboard events cleared
+80.9070 	EXP 	faces: autoDraw = True
+81.3148 	EXP 	New trial (rep=0, index=30): <Trial 30 (30 in rep 0) data={'block': 1, 'trial': 31, 'image': 'faces/unknown/unknown_1.jpg', 'type': 'unknown', 'thisN': 30, 'thisTrialN': 30, 'thisRepN': 0}>
+81.3456 	DATA 	Keypress: space
+81.3495 	EXP 	cross: autoDraw = False
+81.3495 	EXP 	faces: autoDraw = False
+81.3495 	EXP 	faces: image = 'faces/unknown/unknown_1.jpg'
+82.3072 	EXP 	cross: autoDraw = True
+82.7976 	EXP 	cross: autoDraw = False
+83.3070 	INFO 	Keyboard events cleared
+83.3067 	EXP 	faces: autoDraw = True
+83.5451 	EXP 	New trial (rep=0, index=31): <Trial 31 (31 in rep 0) data={'block': 1, 'trial': 32, 'image': 'faces/unknown/unknown_85.jpg', 'type': 'unknown', 'thisN': 31, 'thisTrialN': 31, 'thisRepN': 0}>
+83.5853 	DATA 	Keypress: space
+83.5918 	EXP 	cross: autoDraw = False
+83.5918 	EXP 	faces: autoDraw = False
+83.5918 	EXP 	faces: image = 'faces/unknown/unknown_85.jpg'
+84.5371 	EXP 	cross: autoDraw = True
+85.0281 	EXP 	cross: autoDraw = False
+85.5373 	INFO 	Keyboard events cleared
+85.5370 	EXP 	faces: autoDraw = True
+85.9265 	EXP 	New trial (rep=0, index=32): <Trial 32 (32 in rep 0) data={'block': 1, 'trial': 33, 'image': 'faces/unknown/unknown_228.jpg', 'type': 'unknown', 'thisN': 32, 'thisTrialN': 32, 'thisRepN': 0}>
+85.9559 	DATA 	Keypress: space
+85.9611 	EXP 	cross: autoDraw = False
+85.9611 	EXP 	faces: autoDraw = False
+85.9611 	EXP 	faces: image = 'faces/unknown/unknown_228.jpg'
+86.9188 	EXP 	cross: autoDraw = True
+87.4095 	EXP 	cross: autoDraw = False
+87.9187 	INFO 	Keyboard events cleared
+87.9185 	EXP 	faces: autoDraw = True
+88.2059 	EXP 	New trial (rep=0, index=33): <Trial 33 (33 in rep 0) data={'block': 1, 'trial': 34, 'image': 'faces/unknown/unknown_199.jpg', 'type': 'unknown', 'thisN': 33, 'thisTrialN': 33, 'thisRepN': 0}>
+88.2439 	DATA 	Keypress: space
+88.2466 	EXP 	cross: autoDraw = False
+88.2466 	EXP 	faces: autoDraw = False
+88.2466 	EXP 	faces: image = 'faces/unknown/unknown_199.jpg'
+89.1972 	EXP 	cross: autoDraw = True
+89.6887 	EXP 	cross: autoDraw = False
+90.1980 	INFO 	Keyboard events cleared
+90.1977 	EXP 	faces: autoDraw = True
+90.7388 	EXP 	New trial (rep=0, index=34): <Trial 34 (34 in rep 0) data={'block': 1, 'trial': 35, 'image': 'faces/unknown/unknown_9.jpg', 'type': 'unknown', 'thisN': 34, 'thisTrialN': 34, 'thisRepN': 0}>
+90.7701 	DATA 	Keypress: space
+90.7734 	EXP 	cross: autoDraw = False
+90.7734 	EXP 	faces: autoDraw = False
+90.7734 	EXP 	faces: image = 'faces/unknown/unknown_9.jpg'
+91.7306 	EXP 	cross: autoDraw = True
+92.2217 	EXP 	cross: autoDraw = False
+92.7311 	INFO 	Keyboard events cleared
+92.7308 	EXP 	faces: autoDraw = True
+93.2783 	EXP 	New trial (rep=0, index=35): <Trial 35 (35 in rep 0) data={'block': 1, 'trial': 36, 'image': 'faces/unknown/unknown_167.jpg', 'type': 'unknown', 'thisN': 35, 'thisTrialN': 35, 'thisRepN': 0}>
+93.3174 	DATA 	Keypress: space
+93.3249 	EXP 	cross: autoDraw = False
+93.3249 	EXP 	faces: autoDraw = False
+93.3249 	EXP 	faces: image = 'faces/unknown/unknown_167.jpg'
+94.2699 	EXP 	cross: autoDraw = True
+94.7609 	EXP 	cross: autoDraw = False
+95.2701 	INFO 	Keyboard events cleared
+95.2699 	EXP 	faces: autoDraw = True
+95.7045 	DATA 	Keypress: space
+95.7087 	EXP 	New trial (rep=0, index=36): <Trial 36 (36 in rep 0) data={'block': 1, 'trial': 37, 'image': 'faces/unknown/unknown_39.jpg', 'type': 'unknown', 'thisN': 36, 'thisTrialN': 36, 'thisRepN': 0}>
+95.7551 	EXP 	cross: autoDraw = False
+95.7551 	EXP 	faces: autoDraw = False
+95.7551 	EXP 	faces: image = 'faces/unknown/unknown_39.jpg'
+96.7004 	EXP 	cross: autoDraw = True
+97.1910 	EXP 	cross: autoDraw = False
+97.7008 	INFO 	Keyboard events cleared
+97.7005 	EXP 	faces: autoDraw = True
+99.6897 	EXP 	New trial (rep=0, index=37): <Trial 37 (37 in rep 0) data={'block': 1, 'trial': 38, 'image': 'faces/unknown/unknown_95.jpg', 'type': 'unknown', 'thisN': 37, 'thisTrialN': 37, 'thisRepN': 0}>
+99.7304 	EXP 	faces: autoDraw = False
+99.7304 	EXP 	cross: autoDraw = False
+99.7304 	EXP 	faces: autoDraw = False
+99.7304 	EXP 	faces: image = 'faces/unknown/unknown_95.jpg'
+100.7002 	EXP 	cross: autoDraw = True
+101.1910 	EXP 	cross: autoDraw = False
+101.7006 	INFO 	Keyboard events cleared
+101.7003 	EXP 	faces: autoDraw = True
+102.4533 	EXP 	New trial (rep=0, index=38): <Trial 38 (38 in rep 0) data={'block': 1, 'trial': 39, 'image': 'faces/unknown/unknown_30.jpg', 'type': 'unknown', 'thisN': 38, 'thisTrialN': 38, 'thisRepN': 0}>
+102.4825 	DATA 	Keypress: space
+102.4883 	EXP 	cross: autoDraw = False
+102.4883 	EXP 	faces: autoDraw = False
+102.4883 	EXP 	faces: image = 'faces/unknown/unknown_30.jpg'
+103.4457 	EXP 	cross: autoDraw = True
+103.9364 	EXP 	cross: autoDraw = False
+104.4456 	INFO 	Keyboard events cleared
+104.4454 	EXP 	faces: autoDraw = True
+104.8003 	EXP 	New trial (rep=0, index=39): <Trial 39 (39 in rep 0) data={'block': 1, 'trial': 40, 'image': 'faces/unknown/unknown_37.jpg', 'type': 'unknown', 'thisN': 39, 'thisTrialN': 39, 'thisRepN': 0}>
+104.8315 	DATA 	Keypress: space
+104.8337 	EXP 	cross: autoDraw = False
+104.8337 	EXP 	faces: autoDraw = False
+104.8337 	EXP 	faces: image = 'faces/unknown/unknown_37.jpg'
+105.7908 	EXP 	cross: autoDraw = True
+106.2821 	EXP 	cross: autoDraw = False
+106.7914 	INFO 	Keyboard events cleared
+106.7911 	EXP 	faces: autoDraw = True
+108.1988 	EXP 	New trial (rep=0, index=40): <Trial 40 (40 in rep 0) data={'block': 1, 'trial': 41, 'image': 'faces/unknown/unknown_238.jpg', 'type': 'unknown', 'thisN': 40, 'thisTrialN': 40, 'thisRepN': 0}>
+108.2349 	DATA 	Keypress: space
+108.2395 	EXP 	cross: autoDraw = False
+108.2395 	EXP 	faces: autoDraw = False
+108.2395 	EXP 	faces: image = 'faces/unknown/unknown_238.jpg'
+109.1906 	EXP 	cross: autoDraw = True
+109.6820 	EXP 	cross: autoDraw = False
+110.1914 	INFO 	Keyboard events cleared
+110.1911 	EXP 	faces: autoDraw = True
+110.9702 	DATA 	Keypress: space
+110.9752 	EXP 	New trial (rep=0, index=41): <Trial 41 (41 in rep 0) data={'block': 1, 'trial': 42, 'image': 'faces/unknown/unknown_63.jpg', 'type': 'unknown', 'thisN': 41, 'thisTrialN': 41, 'thisRepN': 0}>
+111.0213 	EXP 	cross: autoDraw = False
+111.0213 	EXP 	faces: autoDraw = False
+111.0213 	EXP 	faces: image = 'faces/unknown/unknown_63.jpg'
+111.9665 	EXP 	cross: autoDraw = True
+112.4575 	EXP 	cross: autoDraw = False
+112.9669 	INFO 	Keyboard events cleared
+112.9666 	EXP 	faces: autoDraw = True
+114.1263 	EXP 	New trial (rep=0, index=42): <Trial 42 (42 in rep 0) data={'block': 1, 'trial': 43, 'image': 'faces/unknown/unknown_265.jpg', 'type': 'unknown', 'thisN': 42, 'thisTrialN': 42, 'thisRepN': 0}>
+114.1617 	DATA 	Keypress: space
+114.1670 	EXP 	cross: autoDraw = False
+114.1670 	EXP 	faces: autoDraw = False
+114.1670 	EXP 	faces: image = 'faces/unknown/unknown_265.jpg'
+115.1180 	EXP 	cross: autoDraw = True
+115.6090 	EXP 	cross: autoDraw = False
+116.1190 	INFO 	Keyboard events cleared
+116.1187 	EXP 	faces: autoDraw = True
+116.4355 	EXP 	New trial (rep=0, index=43): <Trial 43 (43 in rep 0) data={'block': 1, 'trial': 44, 'image': 'faces/unknown/unknown_67.jpg', 'type': 'unknown', 'thisN': 43, 'thisTrialN': 43, 'thisRepN': 0}>
+116.4744 	DATA 	Keypress: space
+116.4817 	EXP 	cross: autoDraw = False
+116.4817 	EXP 	faces: autoDraw = False
+116.4817 	EXP 	faces: image = 'faces/unknown/unknown_67.jpg'
+116.5934 	DATA 	Keypress: space
+117.4267 	EXP 	cross: autoDraw = True
+117.9182 	EXP 	cross: autoDraw = False
+118.4271 	INFO 	Keyboard events cleared
+118.4269 	EXP 	faces: autoDraw = True
+120.4162 	EXP 	New trial (rep=0, index=44): <Trial 44 (44 in rep 0) data={'block': 1, 'trial': 45, 'image': 'faces/unknown/unknown_69.jpg', 'type': 'unknown', 'thisN': 44, 'thisTrialN': 44, 'thisRepN': 0}>
+120.4575 	EXP 	faces: autoDraw = False
+120.4575 	EXP 	cross: autoDraw = False
+120.4575 	EXP 	faces: autoDraw = False
+120.4575 	EXP 	faces: image = 'faces/unknown/unknown_69.jpg'
+121.4273 	EXP 	cross: autoDraw = True
+121.9182 	EXP 	cross: autoDraw = False
+122.4278 	INFO 	Keyboard events cleared
+122.4276 	EXP 	faces: autoDraw = True
+124.4165 	EXP 	New trial (rep=0, index=45): <Trial 45 (45 in rep 0) data={'block': 1, 'trial': 46, 'image': 'faces/unknown/unknown_61.jpg', 'type': 'unknown', 'thisN': 45, 'thisTrialN': 45, 'thisRepN': 0}>
+124.4577 	EXP 	faces: autoDraw = False
+124.4577 	EXP 	cross: autoDraw = False
+124.4577 	EXP 	faces: autoDraw = False
+124.4577 	EXP 	faces: image = 'faces/unknown/unknown_61.jpg'
+125.4271 	EXP 	cross: autoDraw = True
+125.9181 	EXP 	cross: autoDraw = False
+126.4272 	INFO 	Keyboard events cleared
+126.4269 	EXP 	faces: autoDraw = True
+128.4161 	EXP 	New trial (rep=0, index=46): <Trial 46 (46 in rep 0) data={'block': 1, 'trial': 47, 'image': 'faces/unknown/unknown_183.jpg', 'type': 'unknown', 'thisN': 46, 'thisTrialN': 46, 'thisRepN': 0}>
+128.4570 	EXP 	faces: autoDraw = False
+128.4570 	EXP 	cross: autoDraw = False
+128.4570 	EXP 	faces: autoDraw = False
+128.4570 	EXP 	faces: image = 'faces/unknown/unknown_183.jpg'
+129.4265 	EXP 	cross: autoDraw = True
+129.9183 	EXP 	cross: autoDraw = False
+130.4270 	INFO 	Keyboard events cleared
+130.4268 	EXP 	faces: autoDraw = True
+132.4166 	EXP 	New trial (rep=0, index=47): <Trial 47 (47 in rep 0) data={'block': 1, 'trial': 48, 'image': 'faces/unknown/unknown_277.jpg', 'type': 'unknown', 'thisN': 47, 'thisTrialN': 47, 'thisRepN': 0}>
+132.4576 	EXP 	faces: autoDraw = False
+132.4576 	EXP 	cross: autoDraw = False
+132.4576 	EXP 	faces: autoDraw = False
+132.4576 	EXP 	faces: image = 'faces/unknown/unknown_277.jpg'
+133.4269 	EXP 	cross: autoDraw = True
+133.9184 	EXP 	cross: autoDraw = False
+134.4276 	INFO 	Keyboard events cleared
+134.4273 	EXP 	faces: autoDraw = True
+136.4209 	EXP 	faces: autoDraw = False
+136.4209 	EXP 	cross: autoDraw = False
+136.4209 	EXP 	faces: autoDraw = False
+136.4265 	EXP 	text_3: autoDraw = True
+137.4207 	EXP 	text_3: autoDraw = False
+137.4207 	EXP 	text_3: autoDraw = False
+137.4220 	EXP 	project: status = STOPPED
+137.4285 	INFO 	saved data to 'C:\\Users\\napat\\Documents\\GitHub\\BCI\\data/11111_project_2025-04-29_22h33.57.953.csv'
+137.4305 	INFO 	saved data to C:\Users\napat\Documents\GitHub\BCI\data/11111_project_2025-04-29_22h33.57.953.psydat
+138.0669 	DEBUG 	Saving data for project ExperimentHandler
