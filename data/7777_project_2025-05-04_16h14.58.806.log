@@ -1,0 +1,124 @@
+5.3709 	DEBUG 	Fullscreen settings ignored as running in pilot mode.
+5.3719 	INFO 	Loaded monitor calibration from ['2025_03_07 15:28']
+5.5577 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001F11F66AAA0>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001F11F66B700>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=False, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000001F11F71A050>, multiSample=False, name='window1', numSamples=2, pos=[560.0, 240.0], screen=0, size=array([800, 600]), stencilBits=0, stereo=False, title='PsychoPy', units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+5.5578 	EXP 	window1: backgroundImage = ''
+5.5578 	EXP 	window1: backgroundFit = 'none'
+5.5628 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+5.5634 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+5.5640 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+5.5647 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+5.5653 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+5.5656 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+5.5661 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+5.5668 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+5.5670 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+5.5673 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+5.5678 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+5.5683 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+5.5688 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+5.5693 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+5.5698 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+5.5703 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+5.5709 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+5.5712 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+5.5715 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+5.5721 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+5.5725 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+5.5727 	DEBUG 	Uploading Texture Font fontname to graphics card
+5.5766 	DEBUG 	Upload of Texture Font fontname complete
+5.5814 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+5.5825 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+5.5833 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+5.5835 	DEBUG 	Uploading Texture Font fontname to graphics card
+5.5869 	DEBUG 	Upload of Texture Font fontname complete
+5.5883 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+5.5883 	EXP 	window1: recordFrameIntervals = False
+5.6562 	EXP 	window1: recordFrameIntervals = True
+5.7229 	EXP 	Screen (0) actual frame rate measured at 165.92Hz
+5.7230 	EXP 	window1: recordFrameIntervals = False
+5.7277 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+5.7282 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+5.7288 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+5.7296 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+5.7302 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+5.7310 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+5.7314 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+5.7320 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+5.7327 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+5.7334 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+5.7336 	DEBUG 	Uploading Texture Font fontname to graphics card
+5.7341 	DEBUG 	Upload of Texture Font fontname complete
+5.7427 	WARNING 	launchHubServer: If using the iohub mouse or eyetracker devices, fullScr should be True.
+7.7099 	INFO 	keyboard.Keyboard is using iohub backend.
+7.7099 	INFO 	keyboard.Keyboard is using iohub backend.
+7.7099 	INFO 	keyboard.Keyboard is using iohub backend.
+7.7099 	EXP 	project: status = STARTED
+7.7811 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text', opacity=1, ori=0.0, pos=array([0. , 0.1]), rgb=UNKNOWN, text="Please don't move or blink", units='height', win=Window(...), wrapWidth=1)
+7.7869 	EXP 	Created text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_2', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='If you ready, press [space bar]\n', units='height', win=Window(...), wrapWidth=1)
+7.7892 	EXP 	Created cross = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-1.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='cross', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.1, 0.1]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+7.7924 	EXP 	Created faces = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='default.png', interpolate=True, mask=None, maskParams=None, name='faces', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128.0, units='height', win=Window(...))
+7.7957 	EXP 	Created text_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_3', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Endding block', units='height', win=Window(...), wrapWidth=1)
+0.0242 	INFO 	Keyboard events cleared
+0.0238 	EXP 	text: autoDraw = True
+0.0238 	EXP 	text_2: autoDraw = True
+3.0661 	DATA 	Keypress: space
+3.0774 	DEBUG 	Read csv file with pandas: blocks/block1.csv
+3.0782 	DEBUG 	Clearing unnamed columns from blocks/block1.csv
+3.0786 	EXP 	Imported blocks/block1.csv as conditions, 5 conditions, 4 params
+3.0788 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'block': 1, 'trial': 1, 'image': 'faces/unknown/unknown_48.jpg', 'type': 'unknown', 'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+3.1088 	EXP 	text: autoDraw = False
+3.1088 	EXP 	text_2: autoDraw = False
+3.1088 	EXP 	faces: image = 'faces/unknown/unknown_48.jpg'
+4.0665 	EXP 	cross: autoDraw = True
+4.7267 	EXP 	cross: autoDraw = False
+5.0555 	DATA 	Keypress: space
+5.0729 	INFO 	Keyboard events cleared
+5.0726 	EXP 	faces: autoDraw = True
+5.5298 	DATA 	Keypress: space
+5.9601 	DATA 	Keypress: space
+7.0618 	EXP 	New trial (rep=0, index=1): <Trial 1 (1 in rep 0) data={'block': 1, 'trial': 2, 'image': 'faces/unknown/unknown_174.jpg', 'type': 'unknown', 'thisN': 1, 'thisTrialN': 1, 'thisRepN': 0}>
+7.0904 	EXP 	faces: autoDraw = False
+7.0904 	EXP 	cross: autoDraw = False
+7.0904 	EXP 	faces: autoDraw = False
+7.0904 	EXP 	faces: image = 'faces/unknown/unknown_174.jpg'
+8.0540 	EXP 	cross: autoDraw = True
+8.7142 	EXP 	cross: autoDraw = False
+9.0544 	INFO 	Keyboard events cleared
+9.0541 	EXP 	faces: autoDraw = True
+11.0435 	EXP 	New trial (rep=0, index=2): <Trial 2 (2 in rep 0) data={'block': 1, 'trial': 3, 'image': 'faces/unknown/unknown_66.jpg', 'type': 'unknown', 'thisN': 2, 'thisTrialN': 2, 'thisRepN': 0}>
+11.0782 	EXP 	faces: autoDraw = False
+11.0782 	EXP 	cross: autoDraw = False
+11.0782 	EXP 	faces: autoDraw = False
+11.0782 	EXP 	faces: image = 'faces/unknown/unknown_66.jpg'
+12.0361 	EXP 	cross: autoDraw = True
+12.6962 	EXP 	cross: autoDraw = False
+13.0360 	INFO 	Keyboard events cleared
+13.0358 	EXP 	faces: autoDraw = True
+15.0253 	EXP 	New trial (rep=0, index=3): <Trial 3 (3 in rep 0) data={'block': 1, 'trial': 4, 'image': 'faces/unknown/unknown_267.jpg', 'type': 'unknown', 'thisN': 3, 'thisTrialN': 3, 'thisRepN': 0}>
+15.0544 	EXP 	faces: autoDraw = False
+15.0544 	EXP 	cross: autoDraw = False
+15.0544 	EXP 	faces: autoDraw = False
+15.0544 	EXP 	faces: image = 'faces/unknown/unknown_267.jpg'
+16.0175 	EXP 	cross: autoDraw = True
+16.6718 	EXP 	cross: autoDraw = False
+17.0178 	INFO 	Keyboard events cleared
+17.0175 	EXP 	faces: autoDraw = True
+19.0068 	EXP 	New trial (rep=0, index=4): <Trial 4 (4 in rep 0) data={'block': 1, 'trial': 5, 'image': 'faces/unknown/unknown_210.jpg', 'type': 'unknown', 'thisN': 4, 'thisTrialN': 4, 'thisRepN': 0}>
+19.0353 	EXP 	faces: autoDraw = False
+19.0353 	EXP 	cross: autoDraw = False
+19.0353 	EXP 	faces: autoDraw = False
+19.0353 	EXP 	faces: image = 'faces/unknown/unknown_210.jpg'
+19.9994 	EXP 	cross: autoDraw = True
+20.6597 	EXP 	cross: autoDraw = False
+20.9993 	INFO 	Keyboard events cleared
+20.9991 	EXP 	faces: autoDraw = True
+22.9933 	EXP 	faces: autoDraw = False
+22.9933 	EXP 	cross: autoDraw = False
+22.9933 	EXP 	faces: autoDraw = False
+22.9933 	EXP 	text_3: autoDraw = True
+23.9866 	EXP 	text_3: autoDraw = False
+23.9866 	EXP 	text_3: autoDraw = False
+23.9879 	EXP 	project: status = STOPPED
+23.9902 	INFO 	saved data to 'C:\\Users\\napat\\Documents\\GitHub\\BCI-P300-project\\data/7777_project_2025-05-04_16h14.58.806.csv'
+23.9911 	INFO 	saved data to C:\Users\napat\Documents\GitHub\BCI-P300-project\data/7777_project_2025-05-04_16h14.58.806.psydat
+24.4154 	DEBUG 	Saving data for project ExperimentHandler

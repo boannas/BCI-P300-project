@@ -1,0 +1,3 @@
+﻿block,trial,image,type,thisN,thisTrialN,thisRepN,trial_loop.thisRepN,trial_loop.thisTrialN,trial_loop.thisN,trial_loop.thisIndex,thisRow.t,notes,Welcome.started,text.started,text_2.started,key_resp.started,Welcome.stopped,key_resp.keys,key_resp.rt,key_resp.duration,trial_ex.started,participant,session,date,expName,psychopyVersion,frameRate,expStart,
+,,,,,,,,,,,,,0.005919399991398677,0.009383600001456216,0.009383600001456216,0.009383600001456216,0.8982686999952421,space,0.8834926999988966,None,,263237,001,2025-05-04_17h02.40.115,project,2024.2.4,164.19929851647467,2025-05-04 17h02.43.725689 +0700,
+1,1,faces/unknown/unknown_48.jpg,unknown,0,0,0,0,0,0,0,0.9067169999907492,,,,,,,,,,0.901932199994917,,,,,,,,

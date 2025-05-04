@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2024.2.4),
-    on April 30, 2025, at 17:08
+    on May 04, 2025, at 17:41
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -126,7 +126,7 @@ def setupData(expInfo, dataDir=None):
     thisExp = data.ExperimentHandler(
         name=expName, version='',
         extraInfo=expInfo, runtimeInfo=None,
-        originPath='C:\\Users\\napat\\Documents\\GitHub\\BCI\\project_lastrun.py',
+        originPath='C:\\Users\\napat\\Documents\\GitHub\\BCI-P300-project\\project_lastrun.py',
         savePickle=True, saveWideText=True,
         dataFileName=dataDir + os.sep + filename, sortColumns='time'
     )
@@ -389,8 +389,17 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         languageStyle='LTR',
         depth=-1.0);
     key_resp = keyboard.Keyboard(deviceName='key_resp')
-    # Run 'Begin Experiment' code from code
+    # Run 'Begin Experiment' code from Set_var
+    
+    from pylsl import StreamInfo, StreamOutlet
+    
+    # Create an LSL stream outlet for markers
+    info = StreamInfo(name='MarkerStream', type='Markers', channel_count=1,
+                      channel_format='string', source_id='faceMarker001')
+    outlet = StreamOutlet(info)
+    
     pressed_trials = set()
+    
     
     # --- Initialize components for Routine "trial_ex" ---
     cross = visual.ShapeStim(
@@ -399,16 +408,27 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         ori=0.0, pos=(0, 0), draggable=False, anchor='center',
         lineWidth=1.0,
         colorSpace='rgb', lineColor='white', fillColor='white',
-        opacity=None, depth=0.0, interpolate=True)
-    faces = visual.ImageStim(
+        opacity=None, depth=-1.0, interpolate=True)
+    
+    # --- Initialize components for Routine "faces" ---
+    faces_image = visual.ImageStim(
         win=win,
-        name='faces', 
+        name='faces_image', 
         image='default.png', mask=None, anchor='center',
         ori=0.0, pos=(0, 0), draggable=False, size=(0.5, 0.5),
         color=[1,1,1], colorSpace='rgb', opacity=None,
         flipHoriz=False, flipVert=False,
-        texRes=128.0, interpolate=True, depth=-1.0)
+        texRes=128.0, interpolate=True, depth=0.0)
     response = keyboard.Keyboard(deviceName='response')
+    # Run 'Begin Experiment' code from response_space
+    #marker_code = {
+    #    'unknown': '10',
+    #    'public': '20',
+    #    'personal': '30'
+    #}.get(type, 0)
+    #print("SSADSDASDSAD", marker_code)
+    #faces_image.setAutoDraw(True)
+    #win.callOnFlip(outlet.push_sample, [marker_code])  # triggers with face onset
     
     # --- Initialize components for Routine "end_block" ---
     text_3 = visual.TextStim(win=win, name='text_3',
@@ -643,16 +663,17 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         # create an object to store info about Routine trial_ex
         trial_ex = data.Routine(
             name='trial_ex',
-            components=[cross, faces, response],
+            components=[cross],
         )
         trial_ex.status = NOT_STARTED
         continueRoutine = True
         # update component parameters for each repeat
-        faces.setImage(image)
-        # create starting attributes for response
-        response.keys = []
-        response.rt = []
-        _response_allKeys = []
+        # Run 'Begin Routine' code from fixation
+        import random
+        fixation_duration = random.uniform(0.6, 1.0) 
+        #print(fixation_duration)
+        
+        
         # store start times for trial_ex
         trial_ex.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
         trial_ex.tStart = globalClock.getTime(format='float')
@@ -709,7 +730,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             # if cross is stopping this frame...
             if cross.status == STARTED:
                 # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > cross.tStartRefresh + block-frameTolerance:
+                if tThisFlipGlobal > cross.tStartRefresh + fixation_duration-frameTolerance:
                     # keep track of stop time/frame for later
                     cross.tStop = t  # not accounting for scr refresh
                     cross.tStopRefresh = tThisFlipGlobal  # on global time
@@ -719,87 +740,6 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                     # update status
                     cross.status = FINISHED
                     cross.setAutoDraw(False)
-            
-            # *faces* updates
-            
-            # if faces is starting this frame...
-            if faces.status == NOT_STARTED and tThisFlip >= 2-frameTolerance:
-                # keep track of start time/frame for later
-                faces.frameNStart = frameN  # exact frame index
-                faces.tStart = t  # local t and not account for scr refresh
-                faces.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(faces, 'tStartRefresh')  # time at next scr refresh
-                # add timestamp to datafile
-                thisExp.timestampOnFlip(win, 'faces.started')
-                # update status
-                faces.status = STARTED
-                faces.setAutoDraw(True)
-            
-            # if faces is active this frame...
-            if faces.status == STARTED:
-                # update params
-                pass
-            
-            # if faces is stopping this frame...
-            if faces.status == STARTED:
-                # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > faces.tStartRefresh + 2-frameTolerance:
-                    # keep track of stop time/frame for later
-                    faces.tStop = t  # not accounting for scr refresh
-                    faces.tStopRefresh = tThisFlipGlobal  # on global time
-                    faces.frameNStop = frameN  # exact frame index
-                    # add timestamp to datafile
-                    thisExp.timestampOnFlip(win, 'faces.stopped')
-                    # update status
-                    faces.status = FINISHED
-                    faces.setAutoDraw(False)
-            
-            # *response* updates
-            waitOnFlip = False
-            
-            # if response is starting this frame...
-            if response.status == NOT_STARTED and tThisFlip >= 2-frameTolerance:
-                # keep track of start time/frame for later
-                response.frameNStart = frameN  # exact frame index
-                response.tStart = t  # local t and not account for scr refresh
-                response.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(response, 'tStartRefresh')  # time at next scr refresh
-                # add timestamp to datafile
-                thisExp.timestampOnFlip(win, 'response.started')
-                # update status
-                response.status = STARTED
-                # keyboard checking is just starting
-                waitOnFlip = True
-                win.callOnFlip(response.clock.reset)  # t=0 on next screen flip
-                win.callOnFlip(response.clearEvents, eventType='keyboard')  # clear events on next screen flip
-            
-            # if response is stopping this frame...
-            if response.status == STARTED:
-                # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > response.tStartRefresh + 2-frameTolerance:
-                    # keep track of stop time/frame for later
-                    response.tStop = t  # not accounting for scr refresh
-                    response.tStopRefresh = tThisFlipGlobal  # on global time
-                    response.frameNStop = frameN  # exact frame index
-                    # add timestamp to datafile
-                    thisExp.timestampOnFlip(win, 'response.stopped')
-                    # update status
-                    response.status = FINISHED
-                    response.status = FINISHED
-            if response.status == STARTED and not waitOnFlip:
-                theseKeys = response.getKeys(keyList=['space'], ignoreKeys=["escape"], waitRelease=False)
-                _response_allKeys.extend(theseKeys)
-                if len(_response_allKeys):
-                    response.keys = _response_allKeys[-1].name  # just the last key pressed
-                    response.rt = _response_allKeys[-1].rt
-                    response.duration = _response_allKeys[-1].duration
-            # Run 'Each Frame' code from code_2
-            #print(f"Trial {trial} — keys: {response.keys}")
-            #
-            if response.keys and 'space' in response.keys:
-                pressed_trials.add(trial)
-               
-            
             
             # check for quit (typically the Esc key)
             if defaultKeyboard.getKeys(keyList=["escape"]):
@@ -840,6 +780,184 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         trial_ex.tStop = globalClock.getTime(format='float')
         trial_ex.tStopRefresh = tThisFlipGlobal
         thisExp.addData('trial_ex.stopped', trial_ex.tStop)
+        # the Routine "trial_ex" was not non-slip safe, so reset the non-slip timer
+        routineTimer.reset()
+        
+        # --- Prepare to start Routine "faces" ---
+        # create an object to store info about Routine faces
+        faces = data.Routine(
+            name='faces',
+            components=[faces_image, response],
+        )
+        faces.status = NOT_STARTED
+        continueRoutine = True
+        # update component parameters for each repeat
+        faces_image.setImage(image)
+        # create starting attributes for response
+        response.keys = []
+        response.rt = []
+        _response_allKeys = []
+        # Run 'Begin Routine' code from code_2
+        marker_code = {
+            'unknown': '10',
+            'public': '20',
+            'personal': '30'
+        }.get(type, 0)
+        print(marker_code)
+        outlet.push_sample([marker_code])
+        # store start times for faces
+        faces.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
+        faces.tStart = globalClock.getTime(format='float')
+        faces.status = STARTED
+        thisExp.addData('faces.started', faces.tStart)
+        faces.maxDuration = None
+        # keep track of which components have finished
+        facesComponents = faces.components
+        for thisComponent in faces.components:
+            thisComponent.tStart = None
+            thisComponent.tStop = None
+            thisComponent.tStartRefresh = None
+            thisComponent.tStopRefresh = None
+            if hasattr(thisComponent, 'status'):
+                thisComponent.status = NOT_STARTED
+        # reset timers
+        t = 0
+        _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+        frameN = -1
+        
+        # --- Run Routine "faces" ---
+        # if trial has changed, end Routine now
+        if isinstance(trial_loop, data.TrialHandler2) and thisTrial_loop.thisN != trial_loop.thisTrial.thisN:
+            continueRoutine = False
+        faces.forceEnded = routineForceEnded = not continueRoutine
+        while continueRoutine and routineTimer.getTime() < 2.0:
+            # get current time
+            t = routineTimer.getTime()
+            tThisFlip = win.getFutureFlipTime(clock=routineTimer)
+            tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+            frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+            # update/draw components on each frame
+            
+            # *faces_image* updates
+            
+            # if faces_image is starting this frame...
+            if faces_image.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                # keep track of start time/frame for later
+                faces_image.frameNStart = frameN  # exact frame index
+                faces_image.tStart = t  # local t and not account for scr refresh
+                faces_image.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(faces_image, 'tStartRefresh')  # time at next scr refresh
+                # add timestamp to datafile
+                thisExp.timestampOnFlip(win, 'faces_image.started')
+                # update status
+                faces_image.status = STARTED
+                faces_image.setAutoDraw(True)
+            
+            # if faces_image is active this frame...
+            if faces_image.status == STARTED:
+                # update params
+                pass
+            
+            # if faces_image is stopping this frame...
+            if faces_image.status == STARTED:
+                # is it time to stop? (based on global clock, using actual start)
+                if tThisFlipGlobal > faces_image.tStartRefresh + 2-frameTolerance:
+                    # keep track of stop time/frame for later
+                    faces_image.tStop = t  # not accounting for scr refresh
+                    faces_image.tStopRefresh = tThisFlipGlobal  # on global time
+                    faces_image.frameNStop = frameN  # exact frame index
+                    # add timestamp to datafile
+                    thisExp.timestampOnFlip(win, 'faces_image.stopped')
+                    # update status
+                    faces_image.status = FINISHED
+                    faces_image.setAutoDraw(False)
+            
+            # *response* updates
+            waitOnFlip = False
+            
+            # if response is starting this frame...
+            if response.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                # keep track of start time/frame for later
+                response.frameNStart = frameN  # exact frame index
+                response.tStart = t  # local t and not account for scr refresh
+                response.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(response, 'tStartRefresh')  # time at next scr refresh
+                # add timestamp to datafile
+                thisExp.timestampOnFlip(win, 'response.started')
+                # update status
+                response.status = STARTED
+                # keyboard checking is just starting
+                waitOnFlip = True
+                win.callOnFlip(response.clock.reset)  # t=0 on next screen flip
+                win.callOnFlip(response.clearEvents, eventType='keyboard')  # clear events on next screen flip
+            
+            # if response is stopping this frame...
+            if response.status == STARTED:
+                # is it time to stop? (based on global clock, using actual start)
+                if tThisFlipGlobal > response.tStartRefresh + 2-frameTolerance:
+                    # keep track of stop time/frame for later
+                    response.tStop = t  # not accounting for scr refresh
+                    response.tStopRefresh = tThisFlipGlobal  # on global time
+                    response.frameNStop = frameN  # exact frame index
+                    # add timestamp to datafile
+                    thisExp.timestampOnFlip(win, 'response.stopped')
+                    # update status
+                    response.status = FINISHED
+                    response.status = FINISHED
+            if response.status == STARTED and not waitOnFlip:
+                theseKeys = response.getKeys(keyList=['space'], ignoreKeys=["escape"], waitRelease=False)
+                _response_allKeys.extend(theseKeys)
+                if len(_response_allKeys):
+                    response.keys = _response_allKeys[-1].name  # just the last key pressed
+                    response.rt = _response_allKeys[-1].rt
+                    response.duration = _response_allKeys[-1].duration
+            # Run 'Each Frame' code from response_space
+            #print(f"Trial {trial} — keys: {response.keys}")
+            #
+            if response.keys and 'space' in response.keys:
+                pressed_trials.add(trial)
+               
+            
+            
+            # check for quit (typically the Esc key)
+            if defaultKeyboard.getKeys(keyList=["escape"]):
+                thisExp.status = FINISHED
+            if thisExp.status == FINISHED or endExpNow:
+                endExperiment(thisExp, win=win)
+                return
+            # pause experiment here if requested
+            if thisExp.status == PAUSED:
+                pauseExperiment(
+                    thisExp=thisExp, 
+                    win=win, 
+                    timers=[routineTimer], 
+                    playbackComponents=[]
+                )
+                # skip the frame we paused on
+                continue
+            
+            # check if all components have finished
+            if not continueRoutine:  # a component has requested a forced-end of Routine
+                faces.forceEnded = routineForceEnded = True
+                break
+            continueRoutine = False  # will revert to True if at least one component still running
+            for thisComponent in faces.components:
+                if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                    continueRoutine = True
+                    break  # at least one component has not yet finished
+            
+            # refresh the screen
+            if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+                win.flip()
+        
+        # --- Ending Routine "faces" ---
+        for thisComponent in faces.components:
+            if hasattr(thisComponent, "setAutoDraw"):
+                thisComponent.setAutoDraw(False)
+        # store stop times for faces
+        faces.tStop = globalClock.getTime(format='float')
+        faces.tStopRefresh = tThisFlipGlobal
+        thisExp.addData('faces.stopped', faces.tStop)
         # check responses
         if response.keys in ['', [], None]:  # No response was made
             response.keys = None
@@ -847,8 +965,13 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         if response.keys != None:  # we had a response
             trial_loop.addData('response.rt', response.rt)
             trial_loop.addData('response.duration', response.duration)
-        # the Routine "trial_ex" was not non-slip safe, so reset the non-slip timer
-        routineTimer.reset()
+        # using non-slip timing so subtract the expected duration of this Routine (unless ended on request)
+        if faces.maxDurationReached:
+            routineTimer.addTime(-faces.maxDuration)
+        elif faces.forceEnded:
+            routineTimer.reset()
+        else:
+            routineTimer.addTime(-2.000000)
         thisExp.nextEntry()
         
     # completed 1.0 repeats of 'trial_loop'
@@ -895,11 +1018,6 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         tThisFlipGlobal = win.getFutureFlipTime(clock=None)
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
-        # Run 'Each Frame' code from code_3
-        thisExp.addData('pressed_trials', str(pressed_trials))
-        print("Pressed trials:", pressed_trials)
-        print("Data file will be saved to:", thisExp.dataFileName)
-        
         
         # *text_3* updates
         
@@ -982,6 +1100,11 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     else:
         routineTimer.addTime(-1.000000)
     thisExp.nextEntry()
+    # Run 'End Experiment' code from code_3
+    thisExp.addData('pressed_trials', str(pressed_trials))
+    print("Pressed trials:", pressed_trials)
+    print("Data file will be saved to:", thisExp.dataFileName)
+    
     
     # mark experiment as finished
     endExperiment(thisExp, win=win)

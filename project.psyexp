@@ -171,11 +171,11 @@
         <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
         <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
       </KeyboardComponent>
-      <CodeComponent name="code" plugin="None">
+      <CodeComponent name="Set var" plugin="None">
         <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
-        <Param val="pressed_trials = set()" valType="extendedCode" updates="constant" name="Begin Experiment"/>
-        <Param val="pressed_trials = set();&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="&amp;#10;from pylsl import StreamInfo, StreamOutlet&amp;#10;&amp;#10;# Create an LSL stream outlet for markers&amp;#10;info = StreamInfo(name='MarkerStream', type='Markers', channel_count=1,&amp;#10;                  channel_format='string', source_id='faceMarker001')&amp;#10;outlet = StreamOutlet(info)&amp;#10;&amp;#10;pressed_trials = set()&amp;#10;" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="import {StreamInfo, StreamOutlet} from 'pylsl';&amp;#10;info = new StreamInfo({&quot;name&quot;: &quot;MarkerStream&quot;, &quot;type&quot;: &quot;Markers&quot;, &quot;channel_count&quot;: 1, &quot;channel_format&quot;: &quot;string&quot;, &quot;source_id&quot;: &quot;faceMarker001&quot;});&amp;#10;outlet = new StreamOutlet(info);&amp;#10;pressed_trials = set();&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin Routine"/>
         <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
@@ -186,7 +186,7 @@
         <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
         <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
-        <Param val="code" valType="code" updates="None" name="name"/>
+        <Param val="Set var" valType="code" updates="None" name="name"/>
       </CodeComponent>
     </Routine>
     <Routine name="Ending">
@@ -259,10 +259,10 @@
         <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin Routine"/>
         <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
-        <Param val="thisExp.addData('pressed_trials', str(pressed_trials))&amp;#10;print(&quot;Pressed trials:&quot;, pressed_trials)&amp;#10;print(&quot;Data file will be saved to:&quot;, thisExp.dataFileName)&amp;#10;" valType="extendedCode" updates="constant" name="Each Frame"/>
-        <Param val="psychoJS.experiment.addData(&quot;pressed_trials&quot;, pressed_trials.toString());&amp;#10;console.log(&quot;Pressed trials:&quot;, pressed_trials);&amp;#10;console.log(&quot;Data file will be saved to:&quot;, psychoJS.experiment.dataFileName);&amp;#10;" valType="extendedCode" updates="constant" name="Each JS Frame"/>
-        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
-        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="thisExp.addData('pressed_trials', str(pressed_trials))&amp;#10;print(&quot;Pressed trials:&quot;, pressed_trials)&amp;#10;print(&quot;Data file will be saved to:&quot;, thisExp.dataFileName)&amp;#10;" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="psychoJS.experiment.addData(&quot;pressed_trials&quot;, pressed_trials.toString());&amp;#10;console.log(&quot;Pressed trials:&quot;, pressed_trials);&amp;#10;console.log(&quot;Data file will be saved to:&quot;, psychoJS.experiment.dataFileName);&amp;#10;" valType="extendedCode" updates="constant" name="End JS Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
         <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
@@ -297,6 +297,23 @@
       </TextComponent>
     </Routine>
     <Routine name="trial_ex">
+      <CodeComponent name="fixation" plugin="None">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="import * as random from 'random';&amp;#10;fixation_duration = Math.random.uniform(0.6, 1.0);&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="import random&amp;#10;fixation_duration = random.uniform(0.6, 1.0) &amp;#10;#print(fixation_duration)&amp;#10;&amp;#10;" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="fixation" valType="code" updates="None" name="name"/>
+      </CodeComponent>
       <RoutineSettingsComponent name="trial_ex" plugin="None">
         <Param val="none" valType="str" updates="None" name="backgroundFit"/>
         <Param val="" valType="str" updates="None" name="backgroundImg"/>
@@ -336,13 +353,31 @@
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="1" valType="code" updates="None" name="startVal"/>
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="$block" valType="code" updates="constant" name="stopVal"/>
+        <Param val="$fixation_duration" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
         <Param val="" valType="list" updates="constant" name="vertices"/>
       </PolygonComponent>
-      <ImageComponent name="faces" plugin="None">
+    </Routine>
+    <Routine name="faces">
+      <RoutineSettingsComponent name="faces" plugin="None">
+        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
+        <Param val="" valType="str" updates="None" name="backgroundImg"/>
+        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+        <Param val="" valType="str" updates="constant" name="desc"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="False" valType="code" updates="None" name="forceNonSlip"/>
+        <Param val="faces" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="constant" name="skipIf"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
+      </RoutineSettingsComponent>
+      <ImageComponent name="faces_image" plugin="None">
         <Param val="center" valType="str" updates="constant" name="anchor"/>
         <Param val="$[1,1,1]" valType="color" updates="constant" name="color"/>
         <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
@@ -355,7 +390,7 @@
         <Param val="$image" valType="file" updates="set every repeat" name="image"/>
         <Param val="linear" valType="str" updates="constant" name="interpolate"/>
         <Param val="" valType="str" updates="constant" name="mask"/>
-        <Param val="faces" valType="code" updates="None" name="name"/>
+        <Param val="faces_image" valType="code" updates="None" name="name"/>
         <Param val="" valType="num" updates="constant" name="opacity"/>
         <Param val="0" valType="num" updates="constant" name="ori"/>
         <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
@@ -363,7 +398,7 @@
         <Param val="(0.5, 0.5)" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
-        <Param val="2" valType="code" updates="None" name="startVal"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="2" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
@@ -384,23 +419,40 @@
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
-        <Param val="2" valType="code" updates="None" name="startVal"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="2" valType="code" updates="constant" name="stopVal"/>
         <Param val="last key" valType="str" updates="constant" name="store"/>
         <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
         <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
       </KeyboardComponent>
+      <CodeComponent name="response_space" plugin="None">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="#marker_code = {&amp;#10;#    'unknown': '10',&amp;#10;#    'public': '20',&amp;#10;#    'personal': '30'&amp;#10;#}.get(type, 0)&amp;#10;#print(&quot;SSADSDASDSAD&quot;, marker_code)&amp;#10;#faces_image.setAutoDraw(True)&amp;#10;#win.callOnFlip(outlet.push_sample, [marker_code])  # triggers with face onset" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
+        <Param val="#print(f&quot;Trial {trial} — keys: {response.keys}&quot;)&amp;#10;#&amp;#10;if response.keys and 'space' in response.keys:&amp;#10;    pressed_trials.add(trial)&amp;#10;   &amp;#10;" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="var _pj;&amp;#10;function _pj_snippets(container) {&amp;#10;    function in_es6(left, right) {&amp;#10;        if (((right instanceof Array) || ((typeof right) === &quot;string&quot;))) {&amp;#10;            return (right.indexOf(left) &gt; (- 1));&amp;#10;        } else {&amp;#10;            if (((right instanceof Map) || (right instanceof Set) || (right instanceof WeakMap) || (right instanceof WeakSet))) {&amp;#10;                return right.has(left);&amp;#10;            } else {&amp;#10;                return (left in right);&amp;#10;            }&amp;#10;        }&amp;#10;    }&amp;#10;    container[&quot;in_es6&quot;] = in_es6;&amp;#10;    return container;&amp;#10;}&amp;#10;_pj = {};&amp;#10;_pj_snippets(_pj);&amp;#10;if ((response.keys &amp;&amp; _pj.in_es6(&quot;space&quot;, response.keys))) {&amp;#10;    pressed_trials.add(trial);&amp;#10;}&amp;#10;" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="response_space" valType="code" updates="None" name="name"/>
+      </CodeComponent>
       <CodeComponent name="code_2" plugin="None">
         <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
-        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
-        <Param val="" valType="extendedCode" updates="constant" name="Begin Routine"/>
-        <Param val="Py" valType="str" updates="None" name="Code Type"/>
-        <Param val="#print(f&quot;Trial {trial} — keys: {response.keys}&quot;)&amp;#10;#&amp;#10;if response.keys and 'space' in response.keys:&amp;#10;    pressed_trials.add(trial)&amp;#10;   &amp;#10;" valType="extendedCode" updates="constant" name="Each Frame"/>
-        <Param val="var _pj;&amp;#10;function _pj_snippets(container) {&amp;#10;    function in_es6(left, right) {&amp;#10;        if (((right instanceof Array) || ((typeof right) === &quot;string&quot;))) {&amp;#10;            return (right.indexOf(left) &gt; (- 1));&amp;#10;        } else {&amp;#10;            if (((right instanceof Map) || (right instanceof Set) || (right instanceof WeakMap) || (right instanceof WeakSet))) {&amp;#10;                return right.has(left);&amp;#10;            } else {&amp;#10;                return (left in right);&amp;#10;            }&amp;#10;        }&amp;#10;    }&amp;#10;    container[&quot;in_es6&quot;] = in_es6;&amp;#10;    return container;&amp;#10;}&amp;#10;_pj = {};&amp;#10;_pj_snippets(_pj);&amp;#10;if ((response.keys &amp;&amp; _pj.in_es6(&quot;space&quot;, response.keys))) {&amp;#10;    press_trials.push(trial);&amp;#10;}&amp;#10;" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="marker_code = {&quot;unknown&quot;: &quot;10&quot;, &quot;public&quot;: &quot;20&quot;, &quot;personal&quot;: &quot;30&quot;}.get(type, 0);&amp;#10;console.log(marker_code);&amp;#10;outlet.push_sample([marker_code]);&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="marker_code = {&amp;#10;    'unknown': '10',&amp;#10;    'public': '20',&amp;#10;    'personal': '30'&amp;#10;}.get(type, 0)&amp;#10;print(marker_code)&amp;#10;outlet.push_sample([marker_code])" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
         <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
@@ -414,7 +466,7 @@
     <Routine name="Welcome"/>
     <LoopInitiator loopType="TrialHandler" name="trial_loop">
       <Param name="Selected rows" updates="None" val="" valType="str"/>
-      <Param name="conditions" updates="None" val="[OrderedDict([('block', 1), ('trial', 1), ('image', 'faces/unknown/unknown_48.jpg'), ('type', 'unknown')]), OrderedDict([('block', 1), ('trial', 2), ('image', 'faces/unknown/unknown_174.jpg'), ('type', 'unknown')]), OrderedDict([('block', 1), ('trial', 3), ('image', 'faces/unknown/unknown_66.jpg'), ('type', 'unknown')]), OrderedDict([('block', 1), ('trial', 4), ('image', 'faces/unknown/unknown_267.jpg'), ('type', 'unknown')]), OrderedDict([('block', 1), ('trial', 5), ('image', 'faces/unknown/unknown_210.jpg'), ('type', 'unknown')]), OrderedDict([('block', 1), ('trial', 6), ('image', 'faces/unknown/unknown_132.jpg'), ('type', 'unknown')]), OrderedDict([('block', 1), ('trial', 7), ('image', 'faces/unknown/unknown_26.jpg'), ('type', 'unknown')]), OrderedDict([('block', 1), ('trial', 8), ('image', 'faces/unknown/unknown_8.jpg'), ('type', 'unknown')]), OrderedDict([('block', 1), ('trial', 9), ('image', 'faces/unknown/unknown_68.jpg'), ('type', 'unknown')]), OrderedDict([('block', 1), ('trial', 10), ('image', 'faces/unknown/unknown_44.jpg'), ('type', 'unknown')]), OrderedDict([('block', 1), ('trial', 11), ('image', 'faces/unknown/unknown_128.jpg'), ('type', 'unknown')]), OrderedDict([('block', 1), ('trial', 12), ('image', 'faces/unknown/unknown_156.jpg'), ('type', 'unknown')]), OrderedDict([('block', 1), ('trial', 13), ('image', 'faces/unknown/unknown_203.jpg'), ('type', 'unknown')]), OrderedDict([('block', 1), ('trial', 14), ('image', 'faces/unknown/unknown_28.jpg'), ('type', 'unknown')]), OrderedDict([('block', 1), ('trial', 15), ('image', 'faces/unknown/unknown_285.jpg'), ('type', 'unknown')]), OrderedDict([('block', 1), ('trial', 16), ('image', 'faces/unknown/unknown_241.jpg'), ('type', 'unknown')]), OrderedDict([('block', 1), ('trial', 17), ('image', 'faces/unknown/unknown_204.jpg'), ('type', 'unknown')]), OrderedDict([('block', 1), ('trial', 18), ('image', 'faces/unknown/unknown_227.jpg'), ('type', 'unknown')]), OrderedDict([('block', 1), ('trial', 19), ('image', 'faces/unknown/unknown_168.jpg'), ('type', 'unknown')]), OrderedDict([('block', 1), ('trial', 20), ('image', 'faces/unknown/unknown_281.jpg'), ('type', 'unknown')]), OrderedDict([('block', 1), ('trial', 21), ('image', 'faces/unknown/unknown_101.jpg'), ('type', 'unknown')]), OrderedDict([('block', 1), ('trial', 22), ('image', 'faces/unknown/unknown_245.jpg'), ('type', 'unknown')]), OrderedDict([('block', 1), ('trial', 23), ('image', 'faces/unknown/unknown_151.jpg'), ('type', 'unknown')]), OrderedDict([('block', 1), ('trial', 24), ('image', 'faces/unknown/unknown_189.jpg'), ('type', 'unknown')]), OrderedDict([('block', 1), ('trial', 25), ('image', 'faces/unknown/unknown_148.jpg'), ('type', 'unknown')]), OrderedDict([('block', 1), ('trial', 26), ('image', 'faces/unknown/unknown_123.jpg'), ('type', 'unknown')]), OrderedDict([('block', 1), ('trial', 27), ('image', 'faces/unknown/unknown_127.jpg'), ('type', 'unknown')]), OrderedDict([('block', 1), ('trial', 28), ('image', 'faces/unknown/unknown_292.jpg'), ('type', 'unknown')]), OrderedDict([('block', 1), ('trial', 29), ('image', 'faces/unknown/unknown_282.jpg'), ('type', 'unknown')]), OrderedDict([('block', 1), ('trial', 30), ('image', 'faces/unknown/unknown_41.jpg'), ('type', 'unknown')]), OrderedDict([('block', 1), ('trial', 31), ('image', 'faces/unknown/unknown_1.jpg'), ('type', 'unknown')]), OrderedDict([('block', 1), ('trial', 32), ('image', 'faces/unknown/unknown_85.jpg'), ('type', 'unknown')]), OrderedDict([('block', 1), ('trial', 33), ('image', 'faces/unknown/unknown_228.jpg'), ('type', 'unknown')]), OrderedDict([('block', 1), ('trial', 34), ('image', 'faces/unknown/unknown_199.jpg'), ('type', 'unknown')]), OrderedDict([('block', 1), ('trial', 35), ('image', 'faces/unknown/unknown_9.jpg'), ('type', 'unknown')]), OrderedDict([('block', 1), ('trial', 36), ('image', 'faces/unknown/unknown_167.jpg'), ('type', 'unknown')]), OrderedDict([('block', 1), ('trial', 37), ('image', 'faces/unknown/unknown_39.jpg'), ('type', 'unknown')]), OrderedDict([('block', 1), ('trial', 38), ('image', 'faces/unknown/unknown_95.jpg'), ('type', 'unknown')]), OrderedDict([('block', 1), ('trial', 39), ('image', 'faces/unknown/unknown_30.jpg'), ('type', 'unknown')]), OrderedDict([('block', 1), ('trial', 40), ('image', 'faces/unknown/unknown_37.jpg'), ('type', 'unknown')]), OrderedDict([('block', 1), ('trial', 41), ('image', 'faces/unknown/unknown_238.jpg'), ('type', 'unknown')]), OrderedDict([('block', 1), ('trial', 42), ('image', 'faces/unknown/unknown_63.jpg'), ('type', 'unknown')]), OrderedDict([('block', 1), ('trial', 43), ('image', 'faces/unknown/unknown_265.jpg'), ('type', 'unknown')]), OrderedDict([('block', 1), ('trial', 44), ('image', 'faces/unknown/unknown_67.jpg'), ('type', 'unknown')]), OrderedDict([('block', 1), ('trial', 45), ('image', 'faces/unknown/unknown_69.jpg'), ('type', 'unknown')]), OrderedDict([('block', 1), ('trial', 46), ('image', 'faces/unknown/unknown_61.jpg'), ('type', 'unknown')]), OrderedDict([('block', 1), ('trial', 47), ('image', 'faces/unknown/unknown_183.jpg'), ('type', 'unknown')]), OrderedDict([('block', 1), ('trial', 48), ('image', 'faces/unknown/unknown_277.jpg'), ('type', 'unknown')])]" valType="str"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('block', 1), ('trial', 1), ('image', 'faces/unknown/unknown_48.jpg'), ('type', 'unknown')]), OrderedDict([('block', 1), ('trial', 2), ('image', 'faces/unknown/unknown_174.jpg'), ('type', 'unknown')]), OrderedDict([('block', 1), ('trial', 3), ('image', 'faces/unknown/unknown_66.jpg'), ('type', 'unknown')]), OrderedDict([('block', 1), ('trial', 4), ('image', 'faces/unknown/unknown_267.jpg'), ('type', 'unknown')]), OrderedDict([('block', 1), ('trial', 5), ('image', 'faces/unknown/unknown_210.jpg'), ('type', 'unknown')])]" valType="str"/>
       <Param name="conditionsFile" updates="None" val="blocks/block1.csv" valType="file"/>
       <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
       <Param name="isTrials" updates="None" val="True" valType="bool"/>
@@ -424,6 +476,7 @@
       <Param name="random seed" updates="None" val="" valType="code"/>
     </LoopInitiator>
     <Routine name="trial_ex"/>
+    <Routine name="faces"/>
     <LoopTerminator name="trial_loop"/>
     <Routine name="end_block"/>
   </Flow>

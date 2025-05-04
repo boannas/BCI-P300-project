@@ -1,0 +1,77 @@
+4.2751 	DEBUG 	Fullscreen settings ignored as running in pilot mode.
+4.2760 	INFO 	Loaded monitor calibration from ['2025_03_07 15:28']
+4.4869 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000024438533430>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000024438533490>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=False, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x00000244385C4D30>, multiSample=False, name='window1', numSamples=2, pos=[560.0, 240.0], screen=0, size=array([800, 600]), stencilBits=0, stereo=False, title='PsychoPy', units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+4.4869 	EXP 	window1: backgroundImage = ''
+4.4869 	EXP 	window1: backgroundFit = 'none'
+4.4922 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+4.4928 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+4.4934 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+4.4941 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+4.4948 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+4.4952 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+4.4958 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+4.4965 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+4.4967 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+4.4971 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+4.4976 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+4.4981 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+4.4986 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+4.4992 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+4.4996 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+4.5002 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+4.5008 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+4.5011 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+4.5015 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+4.5022 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+4.5026 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+4.5029 	DEBUG 	Uploading Texture Font fontname to graphics card
+4.5071 	DEBUG 	Upload of Texture Font fontname complete
+4.5121 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+4.5128 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+4.5134 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+4.5136 	DEBUG 	Uploading Texture Font fontname to graphics card
+4.5159 	DEBUG 	Upload of Texture Font fontname complete
+4.5173 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+4.5174 	EXP 	window1: recordFrameIntervals = False
+4.5923 	EXP 	window1: recordFrameIntervals = True
+4.6589 	EXP 	Screen (0) actual frame rate measured at 165.52Hz
+4.6590 	EXP 	window1: recordFrameIntervals = False
+4.6633 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+4.6637 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+4.6644 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+4.6651 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+4.6658 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+4.6666 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+4.6670 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+4.6677 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+4.6685 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+4.6692 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+4.6694 	DEBUG 	Uploading Texture Font fontname to graphics card
+4.6699 	DEBUG 	Upload of Texture Font fontname complete
+4.6796 	WARNING 	launchHubServer: If using the iohub mouse or eyetracker devices, fullScr should be True.
+6.7552 	INFO 	keyboard.Keyboard is using iohub backend.
+6.7553 	INFO 	keyboard.Keyboard is using iohub backend.
+6.7553 	INFO 	keyboard.Keyboard is using iohub backend.
+6.7553 	EXP 	project: status = STARTED
+6.8178 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text', opacity=1, ori=0.0, pos=array([0. , 0.1]), rgb=UNKNOWN, text="Please don't move or blink", units='height', win=Window(...), wrapWidth=1)
+6.8230 	EXP 	Created text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_2', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='If you ready, press [space bar]\n', units='height', win=Window(...), wrapWidth=1)
+6.8396 	EXP 	Created cross = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-1.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='cross', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.1, 0.1]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+6.8429 	EXP 	Created image_2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, image='default.png', interpolate=True, mask=None, maskParams=None, name='image_2', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128.0, units='height', win=Window(...))
+6.8458 	EXP 	Created text_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_3', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Endding block', units='height', win=Window(...), wrapWidth=1)
+0.0013 	DATA 	Keypress: lalt
+0.0197 	INFO 	Keyboard events cleared
+0.0194 	EXP 	text: autoDraw = True
+0.0194 	EXP 	text_2: autoDraw = True
+4.9434 	DATA 	Mouse: Left button down, pos=(655,266)
+4.9944 	DATA 	Mouse:  Left button up, pos=(655,266)
+5.4716 	DEBUG 	Read csv file with pandas: blocks/block1.csv
+5.4725 	DEBUG 	Clearing unnamed columns from blocks/block1.csv
+5.4729 	EXP 	Imported blocks/block1.csv as conditions, 5 conditions, 4 params
+5.4730 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'block': 1, 'trial': 1, 'image': 'faces/unknown/unknown_48.jpg', 'type': 'unknown', 'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+5.4738 	DATA 	Keypress: space
+5.4789 	EXP 	text: autoDraw = False
+5.4789 	EXP 	text_2: autoDraw = False
+6.4612 	EXP 	cross: autoDraw = True
+7.4138 	DEBUG 	Saving data for project ExperimentHandler
+7.4147 	INFO 	saved data to C:\Users\napat\Documents\GitHub\BCI-P300-project\data/727837_project_2025-05-04_16h59.14.809.psydat
+7.4155 	INFO 	saved data to 'C:\\Users\\napat\\Documents\\GitHub\\BCI-P300-project\\data/727837_project_2025-05-04_16h59.14.809.csv'
