@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2024.2.4),
-    on May 04, 2025, at 17:41
+    on May 07, 2025, at 18:01
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -374,20 +374,13 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # Start Code - component code to be run after the window creation
     
     # --- Initialize components for Routine "Welcome" ---
-    text = visual.TextStim(win=win, name='text',
-        text="Please don't move or blink",
-        font='Arial',
-        pos=(0, .1), draggable=False, height=0.05, wrapWidth=None, ori=0.0, 
-        color='white', colorSpace='rgb', opacity=None, 
-        languageStyle='LTR',
-        depth=0.0);
-    text_2 = visual.TextStim(win=win, name='text_2',
-        text='If you ready, press [space bar]\n',
+    Start_text = visual.TextStim(win=win, name='Start_text',
+        text="Please don't move or blink\nIf you ready, press [space bar]\n",
         font='Arial',
         pos=(0, 0), draggable=False, height=0.05, wrapWidth=None, ori=0.0, 
         color='white', colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
-        depth=-1.0);
+        depth=0.0);
     key_resp = keyboard.Keyboard(deviceName='key_resp')
     # Run 'Begin Experiment' code from Set_var
     
@@ -402,8 +395,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     
     
     # --- Initialize components for Routine "trial_ex" ---
-    cross = visual.ShapeStim(
-        win=win, name='cross', vertices='cross',
+    fixation = visual.ShapeStim(
+        win=win, name='fixation', vertices='cross',
         size=(0.1, 0.1),
         ori=0.0, pos=(0, 0), draggable=False, anchor='center',
         lineWidth=1.0,
@@ -420,19 +413,10 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         flipHoriz=False, flipVert=False,
         texRes=128.0, interpolate=True, depth=0.0)
     response = keyboard.Keyboard(deviceName='response')
-    # Run 'Begin Experiment' code from response_space
-    #marker_code = {
-    #    'unknown': '10',
-    #    'public': '20',
-    #    'personal': '30'
-    #}.get(type, 0)
-    #print("SSADSDASDSAD", marker_code)
-    #faces_image.setAutoDraw(True)
-    #win.callOnFlip(outlet.push_sample, [marker_code])  # triggers with face onset
     
     # --- Initialize components for Routine "end_block" ---
-    text_3 = visual.TextStim(win=win, name='text_3',
-        text='Endding block',
+    Endding = visual.TextStim(win=win, name='Endding',
+        text='Endding block\nThankyou for your patient',
         font='Arial',
         pos=(0, 0), draggable=False, height=0.05, wrapWidth=None, ori=0.0, 
         color='white', colorSpace='rgb', opacity=None, 
@@ -471,7 +455,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # create an object to store info about Routine Welcome
     Welcome = data.Routine(
         name='Welcome',
-        components=[text, text_2, key_resp],
+        components=[Start_text, key_resp],
     )
     Welcome.status = NOT_STARTED
     continueRoutine = True
@@ -510,43 +494,23 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
         
-        # *text* updates
+        # *Start_text* updates
         
-        # if text is starting this frame...
-        if text.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # if Start_text is starting this frame...
+        if Start_text.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
             # keep track of start time/frame for later
-            text.frameNStart = frameN  # exact frame index
-            text.tStart = t  # local t and not account for scr refresh
-            text.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(text, 'tStartRefresh')  # time at next scr refresh
+            Start_text.frameNStart = frameN  # exact frame index
+            Start_text.tStart = t  # local t and not account for scr refresh
+            Start_text.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(Start_text, 'tStartRefresh')  # time at next scr refresh
             # add timestamp to datafile
-            thisExp.timestampOnFlip(win, 'text.started')
+            thisExp.timestampOnFlip(win, 'Start_text.started')
             # update status
-            text.status = STARTED
-            text.setAutoDraw(True)
+            Start_text.status = STARTED
+            Start_text.setAutoDraw(True)
         
-        # if text is active this frame...
-        if text.status == STARTED:
-            # update params
-            pass
-        
-        # *text_2* updates
-        
-        # if text_2 is starting this frame...
-        if text_2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            text_2.frameNStart = frameN  # exact frame index
-            text_2.tStart = t  # local t and not account for scr refresh
-            text_2.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(text_2, 'tStartRefresh')  # time at next scr refresh
-            # add timestamp to datafile
-            thisExp.timestampOnFlip(win, 'text_2.started')
-            # update status
-            text_2.status = STARTED
-            text_2.setAutoDraw(True)
-        
-        # if text_2 is active this frame...
-        if text_2.status == STARTED:
+        # if Start_text is active this frame...
+        if Start_text.status == STARTED:
             # update params
             pass
         
@@ -635,7 +599,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         method='sequential', 
         extraInfo=expInfo, 
         originPath=-1, 
-        trialList=data.importConditions('blocks/block1.csv'), 
+        trialList=data.importConditions('blocks/block3.csv'), 
         seed=None, 
     )
     thisExp.addLoop(trial_loop)  # add the loop to the experiment
@@ -663,12 +627,12 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         # create an object to store info about Routine trial_ex
         trial_ex = data.Routine(
             name='trial_ex',
-            components=[cross],
+            components=[fixation],
         )
         trial_ex.status = NOT_STARTED
         continueRoutine = True
         # update component parameters for each repeat
-        # Run 'Begin Routine' code from fixation
+        # Run 'Begin Routine' code from random_fixation_time
         import random
         fixation_duration = random.uniform(0.6, 1.0) 
         #print(fixation_duration)
@@ -707,39 +671,39 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
             # update/draw components on each frame
             
-            # *cross* updates
+            # *fixation* updates
             
-            # if cross is starting this frame...
-            if cross.status == NOT_STARTED and tThisFlip >= 1-frameTolerance:
+            # if fixation is starting this frame...
+            if fixation.status == NOT_STARTED and tThisFlip >= 1-frameTolerance:
                 # keep track of start time/frame for later
-                cross.frameNStart = frameN  # exact frame index
-                cross.tStart = t  # local t and not account for scr refresh
-                cross.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(cross, 'tStartRefresh')  # time at next scr refresh
+                fixation.frameNStart = frameN  # exact frame index
+                fixation.tStart = t  # local t and not account for scr refresh
+                fixation.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(fixation, 'tStartRefresh')  # time at next scr refresh
                 # add timestamp to datafile
-                thisExp.timestampOnFlip(win, 'cross.started')
+                thisExp.timestampOnFlip(win, 'fixation.started')
                 # update status
-                cross.status = STARTED
-                cross.setAutoDraw(True)
+                fixation.status = STARTED
+                fixation.setAutoDraw(True)
             
-            # if cross is active this frame...
-            if cross.status == STARTED:
+            # if fixation is active this frame...
+            if fixation.status == STARTED:
                 # update params
                 pass
             
-            # if cross is stopping this frame...
-            if cross.status == STARTED:
+            # if fixation is stopping this frame...
+            if fixation.status == STARTED:
                 # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > cross.tStartRefresh + fixation_duration-frameTolerance:
+                if tThisFlipGlobal > fixation.tStartRefresh + fixation_duration-frameTolerance:
                     # keep track of stop time/frame for later
-                    cross.tStop = t  # not accounting for scr refresh
-                    cross.tStopRefresh = tThisFlipGlobal  # on global time
-                    cross.frameNStop = frameN  # exact frame index
+                    fixation.tStop = t  # not accounting for scr refresh
+                    fixation.tStopRefresh = tThisFlipGlobal  # on global time
+                    fixation.frameNStop = frameN  # exact frame index
                     # add timestamp to datafile
-                    thisExp.timestampOnFlip(win, 'cross.stopped')
+                    thisExp.timestampOnFlip(win, 'fixation.stopped')
                     # update status
-                    cross.status = FINISHED
-                    cross.setAutoDraw(False)
+                    fixation.status = FINISHED
+                    fixation.setAutoDraw(False)
             
             # check for quit (typically the Esc key)
             if defaultKeyboard.getKeys(keyList=["escape"]):
@@ -797,14 +761,14 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         response.keys = []
         response.rt = []
         _response_allKeys = []
-        # Run 'Begin Routine' code from code_2
+        # Run 'Begin Routine' code from LSL_trigger
         marker_code = {
-            'unknown': '10',
-            'public': '20',
-            'personal': '30'
+            'unknown': '101',
+            'known': '201',
+        #    'personal': '30'
         }.get(type, 0)
         print(marker_code)
-        outlet.push_sample([marker_code])
+        outlet.push_sample([str(marker_code)])
         # store start times for faces
         faces.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
         faces.tStart = globalClock.getTime(format='float')
@@ -984,7 +948,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # create an object to store info about Routine end_block
     end_block = data.Routine(
         name='end_block',
-        components=[text_3],
+        components=[Endding],
     )
     end_block.status = NOT_STARTED
     continueRoutine = True
@@ -1019,39 +983,39 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
         
-        # *text_3* updates
+        # *Endding* updates
         
-        # if text_3 is starting this frame...
-        if text_3.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # if Endding is starting this frame...
+        if Endding.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
             # keep track of start time/frame for later
-            text_3.frameNStart = frameN  # exact frame index
-            text_3.tStart = t  # local t and not account for scr refresh
-            text_3.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(text_3, 'tStartRefresh')  # time at next scr refresh
+            Endding.frameNStart = frameN  # exact frame index
+            Endding.tStart = t  # local t and not account for scr refresh
+            Endding.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(Endding, 'tStartRefresh')  # time at next scr refresh
             # add timestamp to datafile
-            thisExp.timestampOnFlip(win, 'text_3.started')
+            thisExp.timestampOnFlip(win, 'Endding.started')
             # update status
-            text_3.status = STARTED
-            text_3.setAutoDraw(True)
+            Endding.status = STARTED
+            Endding.setAutoDraw(True)
         
-        # if text_3 is active this frame...
-        if text_3.status == STARTED:
+        # if Endding is active this frame...
+        if Endding.status == STARTED:
             # update params
             pass
         
-        # if text_3 is stopping this frame...
-        if text_3.status == STARTED:
+        # if Endding is stopping this frame...
+        if Endding.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > text_3.tStartRefresh + 1.0-frameTolerance:
+            if tThisFlipGlobal > Endding.tStartRefresh + 1.0-frameTolerance:
                 # keep track of stop time/frame for later
-                text_3.tStop = t  # not accounting for scr refresh
-                text_3.tStopRefresh = tThisFlipGlobal  # on global time
-                text_3.frameNStop = frameN  # exact frame index
+                Endding.tStop = t  # not accounting for scr refresh
+                Endding.tStopRefresh = tThisFlipGlobal  # on global time
+                Endding.frameNStop = frameN  # exact frame index
                 # add timestamp to datafile
-                thisExp.timestampOnFlip(win, 'text_3.stopped')
+                thisExp.timestampOnFlip(win, 'Endding.stopped')
                 # update status
-                text_3.status = FINISHED
-                text_3.setAutoDraw(False)
+                Endding.status = FINISHED
+                Endding.setAutoDraw(False)
         
         # check for quit (typically the Esc key)
         if defaultKeyboard.getKeys(keyList=["escape"]):
@@ -1100,11 +1064,10 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     else:
         routineTimer.addTime(-1.000000)
     thisExp.nextEntry()
-    # Run 'End Experiment' code from code_3
+    # Run 'End Experiment' code from Save_Press
     thisExp.addData('pressed_trials', str(pressed_trials))
     print("Pressed trials:", pressed_trials)
     print("Data file will be saved to:", thisExp.dataFileName)
-    
     
     # mark experiment as finished
     endExperiment(thisExp, win=win)
