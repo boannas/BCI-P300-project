@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2024.2.4),
-    on May 07, 2025, at 18:01
+    on May 09, 2025, at 17:55
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -32,6 +32,7 @@ import sys  # to get file system encoding
 
 import psychopy.iohub as io
 from psychopy.hardware import keyboard
+import serial
 
 # --- Setup global variables (available in all functions) ---
 # create a device manager to handle hardware (keyboards, mice, mirophones, speakers, etc.)
@@ -402,6 +403,15 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         lineWidth=1.0,
         colorSpace='rgb', lineColor='white', fillColor='white',
         opacity=None, depth=-1.0, interpolate=True)
+    # Create serial object for device at port 'COM5'
+    serialCom5 = serial.Serial(
+        port='COM5',
+        baudrate=115200,
+        bytesize=8,
+        parity='N',
+        stopbits=1,
+        timeout=None,
+    )
     
     # --- Initialize components for Routine "faces" ---
     faces_image = visual.ImageStim(
@@ -413,6 +423,12 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         flipHoriz=False, flipVert=False,
         texRes=128.0, interpolate=True, depth=0.0)
     response = keyboard.Keyboard(deviceName='response')
+    
+    # point serialPort to device at port 'COM5' and make sure it's open
+    serialPort = serialCom5
+    serialPort.status = NOT_STARTED
+    if not serialPort.is_open:
+        serialPort.open()
     
     # --- Initialize components for Routine "end_block" ---
     Endding = visual.TextStim(win=win, name='Endding',
@@ -599,7 +615,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         method='sequential', 
         extraInfo=expInfo, 
         originPath=-1, 
-        trialList=data.importConditions('blocks/block3.csv'), 
+        trialList=data.importConditions('blocks/block_666.csv'), 
         seed=None, 
     )
     thisExp.addLoop(trial_loop)  # add the loop to the experiment
@@ -751,7 +767,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         # create an object to store info about Routine faces
         faces = data.Routine(
             name='faces',
-            components=[faces_image, response],
+            components=[faces_image, response, serialPort],
         )
         faces.status = NOT_STARTED
         continueRoutine = True
@@ -763,12 +779,12 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         _response_allKeys = []
         # Run 'Begin Routine' code from LSL_trigger
         marker_code = {
-            'unknown': '101',
-            'known': '201',
+            'unknown': 101,
+            'known': 102,
         #    'personal': '30'
         }.get(type, 0)
         print(marker_code)
-        outlet.push_sample([str(marker_code)])
+        #outlet.push_sample([str(marker_code)])
         # store start times for faces
         faces.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
         faces.tStart = globalClock.getTime(format='float')
@@ -882,6 +898,35 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                 pressed_trials.add(trial)
                
             
+            
+            # if serialPort is starting this frame...
+            if serialPort.status == NOT_STARTED and t >= 0.0-frameTolerance:
+                # keep track of start time/frame for later
+                serialPort.frameNStart = frameN  # exact frame index
+                serialPort.tStart = t  # local t and not account for scr refresh
+                serialPort.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(serialPort, 'tStartRefresh')  # time at next scr refresh
+                # add timestamp to datafile
+                thisExp.addData('serialPort.started', t)
+                # update status
+                serialPort.status = STARTED
+                serialPort.write(bytes(chr(marker_code), 'utf8'))
+                serialPort.status = STARTED
+            
+            # if serialPort is stopping this frame...
+            if serialPort.status == STARTED:
+                # is it time to stop? (based on global clock, using actual start)
+                if tThisFlipGlobal > serialPort.tStartRefresh + 1.0-frameTolerance:
+                    # keep track of stop time/frame for later
+                    serialPort.tStop = t  # not accounting for scr refresh
+                    serialPort.tStopRefresh = tThisFlipGlobal  # on global time
+                    serialPort.frameNStop = frameN  # exact frame index
+                    # add timestamp to datafile
+                    thisExp.addData('serialPort.stopped', t)
+                    # update status
+                    serialPort.status = FINISHED
+                    serialPort.write(bytes(chr(0), 'utf8'))
+                    serialPort.status = FINISHED
             
             # check for quit (typically the Esc key)
             if defaultKeyboard.getKeys(keyList=["escape"]):
@@ -1064,6 +1109,9 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     else:
         routineTimer.addTime(-1.000000)
     thisExp.nextEntry()
+    # Close serialPort
+    if serialPort.is_open:
+        serialPort.close()
     # Run 'End Experiment' code from Save_Press
     thisExp.addData('pressed_trials', str(pressed_trials))
     print("Pressed trials:", pressed_trials)
