@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2024.2.4),
-    on May 09, 2025, at 17:55
+    on May 17, 2025, at 12:52
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -403,9 +403,9 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         lineWidth=1.0,
         colorSpace='rgb', lineColor='white', fillColor='white',
         opacity=None, depth=-1.0, interpolate=True)
-    # Create serial object for device at port 'COM5'
-    serialCom5 = serial.Serial(
-        port='COM5',
+    # Create serial object for device at port 'COM6'
+    serialCom6 = serial.Serial(
+        port='COM6',
         baudrate=115200,
         bytesize=8,
         parity='N',
@@ -424,8 +424,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         texRes=128.0, interpolate=True, depth=0.0)
     response = keyboard.Keyboard(deviceName='response')
     
-    # point serialPort to device at port 'COM5' and make sure it's open
-    serialPort = serialCom5
+    # point serialPort to device at port 'COM6' and make sure it's open
+    serialPort = serialCom6
     serialPort.status = NOT_STARTED
     if not serialPort.is_open:
         serialPort.open()
